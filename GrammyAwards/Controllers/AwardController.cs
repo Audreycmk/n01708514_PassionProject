@@ -18,9 +18,9 @@ namespace GrammyAwards.Controllers
         }
 
         [HttpGet("Get")]
-        public async Task<ActionResult<IEnumerable<AwardDto>>> GetAllAwards()
+        public async Task<ActionResult<IEnumerable<AwardDto>>> List()
         {
-            var awards = await _awardService.GetAllAwards();
+            var awards = await _awardService.List();
             return Ok(awards);
         }
 

@@ -16,7 +16,7 @@ namespace GrammyAwards.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<AwardDto>> GetAllAwards()
+        public async Task<IEnumerable<AwardDto>> List()
         {
             var awards = await _context.Awards
                 .Select(a => new AwardDto

@@ -1,12 +1,12 @@
-@model GrammyAwards.Models.ArtistDto
+@model GrammyAwards.Models.AwardDto
 
 @{
-    ViewData["Title"] = "New Artist";
+    ViewData["Title"] = "New Award";
 }
 
-<h1>New Artist</h1>
+<h1>New Award</h1>
 
-<h4>Artist Details</h4>
+<h4>Award Details</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -14,25 +14,24 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             
             <div class="form-group">
-                <label asp-for="ArtistName" class="control-label"></label>
-                <input asp-for="ArtistName" class="form-control" />
-                <span asp-validation-for="ArtistName" class="text-danger"></span>
+                <label asp-for="AwardName" class="control-label"></label>
+                <input asp-for="AwardName" class="form-control" />
+                <span asp-validation-for="AwardName" class="text-danger"></span>
             </div>
             
             <div class="form-group">
-                <label asp-for="Nationality" class="control-label"></label>
-                <input asp-for="Nationality" class="form-control" />
-                <span asp-validation-for="Nationality" class="text-danger"></span>
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             
             <div class="form-group">
                 <input type="submit" value="Add" class="btn btn-primary" />
-                <a class="btn btn-secondary" href="@Url.Action("List", "ArtistPage")">Back to List</a>
+                <a class="btn btn-secondary" href="@Url.Action("List", "AwardPage")">Back to List</a>
             </div>
         </form>
     </div>
 </div>
-
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

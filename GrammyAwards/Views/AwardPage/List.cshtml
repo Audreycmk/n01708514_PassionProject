@@ -1,25 +1,25 @@
-@model IEnumerable<GrammyAwards.Models.ArtistDto>
+@model IEnumerable<GrammyAwards.Models.AwardDto>
 
 @{
-    ViewData["Title"] = "Artists";
+    ViewData["Title"] = "Awards";
 }
 
-<h1>Artists</h1>
+<h1>Awards</h1>
 
 <p>
-    <a asp-action="New">Create New Artist</a>
+    <a asp-action="New">Create New Award</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                Artist Name
+                Award Name
             </th>
             <th>
-                Nationality
+                Description
             </th>
             <th>
-                Number of Songs
+                Number of Nominations
             </th>
             <th></th>
         </tr>
@@ -29,18 +29,15 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.ArtistName)
+                    @Html.DisplayFor(modelItem => item.AwardName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Nationality)
+                    @Html.DisplayFor(modelItem => item.Description)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.NumberOfSongs)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.ArtistId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.ArtistId">Details</a> |
-                    <a asp-action="ConfirmDelete" asp-route-id="@item.ArtistId">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.AwardId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.AwardId">Details</a> |
+                    <a asp-action="ConfirmDelete" asp-route-id="@item.AwardId">Delete</a>
                 </td>
             </tr>
         }
