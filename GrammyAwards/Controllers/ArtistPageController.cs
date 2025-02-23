@@ -105,7 +105,7 @@ public async Task<IActionResult> Update(int id, ArtistDto artistDto)
     if (response.Status == ServiceResponse.ServiceStatus.Updated)
     {
         // Redirect to the Details page with the updated artist ID
-        return RedirectToAction("Details", "ArtistPage", new { id = id });
+       return RedirectToAction("Details", "ArtistPage", new { id = artistDto.ArtistId }); // Make sure you're passing the correct artist ID
     }
 
     // If something went wrong, return the error view
