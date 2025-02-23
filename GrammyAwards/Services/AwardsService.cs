@@ -30,10 +30,10 @@ namespace GrammyAwards.Services
             return awards;
         }
 
-        public async Task<AwardDto> GetAwardById(int awardId)
+        public async Task<AwardDto> GetAwardById(int id)
         {
             var award = await _context.Awards
-                .Where(a => a.AwardId == awardId)
+                .Where(a => a.AwardId == id)
                 .Select(a => new AwardDto
                 {
                     AwardId = a.AwardId,

@@ -42,6 +42,7 @@ public class SongAwardDto //for add + update
         public int SongAwardId { get; set; } 
         public int AwardId { get; set;}
         public int SongId { get; set; } 
+        public string SongName { get; set; }
         public string AwardStatus { get; set;}
 
     }

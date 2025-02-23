@@ -4,25 +4,62 @@
     ViewData["Title"] = "Award Details";
 }
 
-<h1>Award Details</h1>
+<div class="container mt-5">
+    <h1 class="mb-4">Award Details</h1>
 
-<div class="container">
-    <div class="card">
+    <div class="card mb-4">
         <div class="card-header">
-            <h3>@Model.AwardName</h3>
+            <h2>@Model.Award.AwardName</h2>
         </div>
         <div class="card-body">
             <dl class="row">
+                <dt class="col-sm-3">Award ID:</dt>
+                <dd class="col-sm-9">@Model.Award.AwardId</dd>
                 <dt class="col-sm-3">Award Name:</dt>
-                <dd class="col-sm-9">@Model.AwardName</dd>
-                
+                <dd class="col-sm-9">@Model.Award.AwardName</dd>
                 <dt class="col-sm-3">Description:</dt>
-                <dd class="col-sm-9">@Model.Description</dd>
+                <dd class="col-sm-9">@Model.Award.Description</dd>
             </dl>
         </div>
     </div>
 
+    <h3 class="mb-3"> @Model.Award.AwardName - Winner and Nominees</h3>
+    @if (Model.AwardSongs != null && Model.AwardSongs.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Song Title</th>
+                        <th>Award Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var songAward in Model.AwardSongs)
+                    {
+                        <tr>
+                            <td>@songAward.SongName</td>
+                            <td>@songAward.AwardStatus</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <p>No songs are associated with this award.</p>
+    }
     <div class="mt-4">
-        <a class="btn btn-secondary" href="@Url.Action("List", "AwardPage")">Back to List</a>
+      <button type="button" class="btn btn-secondary" disabled>Add Song</button>  
+    </div>
+    <div class="mt-4">
+        <a class="btn btn-primary" href="@Url.Action("Edit", "AwardPage", new { id = Model.Award.AwardId })">Edit</a>
+        <a class="btn btn-danger" href="@Url.Action("ConfirmDelete", "AwardPage", new { id = Model.Award.AwardId })">Delete</a>
+        <a class="btn btn-secondary" href="@Url.Action("List", "AwardPage")">Back to Award List</a>
     </div>
 </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

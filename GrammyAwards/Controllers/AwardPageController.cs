@@ -31,39 +31,27 @@ namespace GrammyAwards.Controllers
             return View(artistDtos);
         }
 
-       [HttpGet]
+    
+    [HttpGet]
 public async Task<IActionResult> Details(int id)
 {
-    // Await the service call to get the AwardDto
+    // Get the award DTO from the service
     AwardDto awardDto = await _awardService.GetAwardById(id);
     if (awardDto == null)
     {
         return NotFound();
     }
 
-    // Map AwardDto to AwardDetails
+    // Map the AwardDto to an AwardDetails view model
     var awardDetails = new AwardDetails
     {
-        AwardId = awardDto.AwardId,
-        AwardName = awardDto.AwardName,
-        Description = awardDto.Description
+        Award = awardDto,
+        AwardSongs = await _songAwardService.GetSongsByAward(awardDto.AwardId)
     };
 
     return View(awardDetails);
 }
 
-
-
-        // GET: AwardPage/Edit/1
-        public async Task<IActionResult> Edit(int id)
-        {
-            var awardDto = await _awardService.GetAwardById(id);
-            if (awardDto == null)
-            {
-                return NotFound();
-            }
-            return View(awardDto);
-        }
 
 
         // GET: AwardPage/New
@@ -91,20 +79,26 @@ public async Task<IActionResult> Details(int id)
 
 
         // POST: AwardPage/Edit/1
-        [HttpPost]
-        public async Task<IActionResult> Edit(int id, AwardDto awardDto)
-        {
-            if (ModelState.IsValid)
+         public async Task<IActionResult> Edit(int id)
+{
+            var award = await _awardService.GetAwardById(id);
+            
+            if (award == null)
             {
-                var response = await _awardService.UpdateAward(id, awardDto);
-                if (response.Status == ServiceResponse.ServiceStatus.Updated)
-                {
-                    return RedirectToAction("Index");
-                }
-                return View("Error", response.Messages);
+                return NotFound();
             }
-            return View(awardDto);
+
+            var awardDto = new AwardDto
+            {
+                
+                AwardId = award.AwardId,
+                AwardName = award.AwardName,
+                Description = award.Description
+            };
+
+            return View(awardDto);  // Make sure you're passing the correct artistDto
         }
+
 
         // GET: AwardPage/Delete/1
         public async Task<IActionResult> ConfirmDelete(int id)
