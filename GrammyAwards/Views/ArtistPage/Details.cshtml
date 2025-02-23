@@ -4,47 +4,57 @@
     ViewData["Title"] = "Artist Details";
 }
 
-<div class="container">
-    <h1>Artist Details</h1>
+<div class="container mt-5">
+    <h1 class="mb-4">Artist Details</h1>
 
     @if (Model?.Artist != null)
     {
-        <h2>@Model.Artist.ArtistName</h2>
-        <dl class="row">
-            <dt class="col-sm-3">Artist ID:</dt>
-            <dd class="col-sm-9">@Model.Artist.ArtistId</dd>
-            <dt class="col-sm-3">Nationality:</dt>
-            <dd class="col-sm-9">@Model.Artist.Nationality</dd>
-        </dl>
+        <!-- Artist Information Section -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2>@Model.Artist.ArtistName</h2>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-3">Artist ID:</dt>
+                    <dd class="col-sm-9">@Model.Artist.ArtistId</dd>
+                    <dt class="col-sm-3">Nationality:</dt>
+                    <dd class="col-sm-9">@Model.Artist.Nationality</dd>
+                </dl>
+            </div>
+        </div>
 
-        @* <h3>Songs</h3> *@
-        @if (Model.Songs != null && Model.Songs.Any())
+        <!-- Songs Table Section -->
+        <h3 class="mb-3">Songs</h3>
+        @if (Model.ArtistSongs != null && Model.ArtistSongs.Any())
         {
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Song Title</th>
-                        <th>Role</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var song in Model.Songs)
-                    {
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
                         <tr>
-                            <td>@song.SongName</td>
-                            <td>@song.Role</td>
+                            <th>Song Title</th>
+                            <th>Role</th>
                         </tr>
-                    }
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        @foreach (var songArtistDto in Model.ArtistSongs)
+                        {
+                            <tr>
+                                <td>@songArtistDto.SongName</td>
+                                <td>@songArtistDto.Role</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
         }
         else
         {
             <p>No songs available for this artist.</p>
         }
 
-        <!-- Action Buttons -->
-        <div class="mt-3">
+        <!-- Action Buttons Section -->
+        <div class="mt-4">
             <a class="btn btn-primary" href="@Url.Action("Edit", "ArtistPage", new { id = Model.Artist.ArtistId })">Edit Artist</a>
             <form method="post" action="@Url.Action("DeleteConfirmed", "ArtistPage", new { id = Model.Artist.ArtistId })" class="d-inline">
                 <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this artist?');">Delete Artist</button>
@@ -54,14 +64,10 @@
     }
     else
     {
-        <div class="alert alert-danger" role="alert">
+        <div class="alert alert-danger mt-4" role="alert">
             <h4>Error</h4>
             <p>Artist data is not available.</p>
             <a class="btn btn-secondary" href="@Url.Action("List", "ArtistPage")">Back to List</a>
         </div>
     }
 </div>
-
-@section Scripts {
-    <!-- Optional: Add any JavaScript if needed -->
-}

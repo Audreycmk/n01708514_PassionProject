@@ -15,10 +15,6 @@ namespace GrammyAwards.Models
 
         public  string Nationality { get; set; }
 
-        public static implicit operator Artist(ArtistDto v)
-        {
-            throw new NotImplementedException();
-        }
     }
 
     public class ArtistDto

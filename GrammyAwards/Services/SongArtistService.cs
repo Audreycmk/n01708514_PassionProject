@@ -18,16 +18,17 @@ namespace GrammyAwards.Services
             _context = context;
         }
 
-        public async Task<IEnumerable<SongDto>> GetSongsByArtist(int artistId)
+        public async Task<IEnumerable<SongArtistDto>> GetSongsByArtist(int artistId)
         {
             var songs = await _context.SongArtists
                 .Where(sa => sa.ArtistId == artistId)
-                .Select(sa => new SongDto
+                .Select(sa => new SongArtistDto
                 {
                     SongId = sa.SongId,
                     SongName = sa.Song.SongName,
-                    Album = sa.Song.Album,
-                    ReleaseYear = sa.Song.ReleaseYear,
+                    Role = sa.Role,
+                    // Album = sa.Song.Album,
+                    // ReleaseYear = sa.Song.ReleaseYear,
                 })
                 .ToListAsync();
 

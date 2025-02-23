@@ -11,11 +11,12 @@ namespace GrammyAwards.Models
         [ForeignKey("Song")]
         public int SongId { get; set; }
         public virtual Song Song { get; set; }
+        public string SongName { get; set; }
 
         [ForeignKey("Artist")]
         public int ArtistId { get; set; }
         public virtual Artist Artist { get; set; }
-
+        public string ArtistName { get; set; }
         public string Role { get; set; }
     }
 
@@ -23,7 +24,9 @@ namespace GrammyAwards.Models
     {
         public int SongArtistId { get; set; }
         public int SongId { get; set; }
+        public string SongName { get; set; }
         public int ArtistId { get; set; }
+        public string ArtistName { get; set; }
         public string Role { get; set; }
     }
 }

@@ -5121,11 +5121,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Audrey/Desktop/Desktop/C# Grammy Failed/GrammyAwards/GrammyAwards.csproj",
+      "projectUniqueName": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/GrammyAwards.csproj",
       "projectName": "GrammyAwards",
-      "projectPath": "/Users/Audrey/Desktop/Desktop/C# Grammy Failed/GrammyAwards/GrammyAwards.csproj",
+      "projectPath": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/GrammyAwards.csproj",
       "packagesPath": "/Users/Audrey/Desktop/.nuget/packages/",
-      "outputPath": "/Users/Audrey/Desktop/Desktop/C# Grammy Failed/GrammyAwards/obj/",
+      "outputPath": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Audrey/Desktop/.nuget/NuGet/NuGet.Config"

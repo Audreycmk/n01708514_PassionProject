@@ -21,41 +21,50 @@ namespace GrammyAwards.Controllers
             _songArtistService = songArtistService;
         }
 
+        // Redirect to List view by default
         public IActionResult Index()
         {
             return RedirectToAction("List");
         }
 
+        // List all artists
         public async Task<IActionResult> List()
         {
+            // Get all artist details (only the ArtistDto is returned here)
             IEnumerable<ArtistDto?> artistDtos = await _artistService.List();
             return View(artistDtos);
         }
 
+        // Show artist details along with songs and roles
+        [HttpGet]
         public async Task<IActionResult> Details(int id)
         {
-            var artistDetails = await _artistService.FindArtist(id);
-            if (artistDetails == null)
+            ArtistDto? ArtistDto = await _artistService.FindArtist(id);
+            IEnumerable<SongArtistDto> SongsAndRoles = await _songArtistService.GetSongsByArtist(id);
+
+            if (ArtistDto == null)
             {
-                return NotFound();
+                return View("Error", new ErrorViewModel() { Errors = ["Could not find artist"] });
             }
-
-            var songArtistDtos = await _songArtistService. GetSongsByArtist(id);
-
-            var artistViewModel = new ArtistDetails
+            else
             {
-                Artist = artistDetails,
-            
-            };
-
-            return View(artistViewModel);
+                // information which drives a category page
+                ArtistDetails ArtistInfo = new ArtistDetails()
+                {
+                    Artist = ArtistDto,
+                    ArtistSongs = SongsAndRoles
+                };
+                return View(ArtistInfo);
+            }
         }
 
+        // View for creating a new artist
         public ActionResult New()
         {
             return View();
         }
 
+        // Add a new artist
         [HttpPost]
         public async Task<IActionResult> Add(ArtistDto artistDto)
         {
@@ -69,30 +78,23 @@ namespace GrammyAwards.Controllers
             return View("Error", new ErrorViewModel { Errors = response.Messages });
         }
 
+        //GET ArtistPage/Edit/{id}
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
-            var artistDetails = await _artistService.FindArtist(id);
-            if (artistDetails == null)
+            ArtistDto? artistDto = await _artistService.FindArtist(id);
+            if (artistDto == null)
             {
-                return View("Error");
+                return View("Error", new ErrorViewModel { Errors = ["Could not find artist"] });
             }
-
-            var songArtistDtos = await _songArtistService.GetSongsByArtist(id);
-
-            var artistViewModel = new ArtistDetails
-            {
-                Artist = artistDetails,
-    
-            };
-
-            return View(artistViewModel);
+            return View(artistDto);
         }
-
+        // Update artist details
         [HttpPost]
-        public async Task<IActionResult> Update(int id, ArtistDto artistDto)
+        public async Task<IActionResult> Update(int id, ArtistDetails artistDetails)
         {
-            ServiceResponse response = await _artistService.UpdateArtist(id, artistDto);
+            // We now use ArtistDetails instead of ArtistDto
+            ServiceResponse response = await _artistService.UpdateArtist(id, artistDetails.Artist);
 
             if (response.Status == ServiceResponse.ServiceStatus.Updated)
             {
@@ -102,17 +104,19 @@ namespace GrammyAwards.Controllers
             return View("Error", new ErrorViewModel { Errors = response.Messages });
         }
 
+        // View for confirming artist deletion
         [HttpGet]
         public async Task<IActionResult> ConfirmDelete(int id)
         {
-            ArtistDto? artistDto = await _artistService.FindArtist(id);
-            if (artistDto == null)
+            var artistDetails = await _artistService.FindArtist(id);
+            if (artistDetails == null)
             {
                 return View("Error");
             }
-            return View(artistDto);
+            return View(artistDetails);
         }
 
+        // Delete artist
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
