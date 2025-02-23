@@ -27,7 +27,7 @@
     
     <form asp-action="Delete" asp-route-id="@Model.ArtistId">
         <input type="hidden" asp-for="ArtistId" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <input type="submit" value="Delete" class="btn btn-danger" />
          <a class="btn btn-secondary" href="@Url.Action("List", "ArtistPage")">Back to List</a>
     </form>
 </div>

@@ -55,10 +55,8 @@
 
         <!-- Action Buttons Section -->
         <div class="mt-4">
-            <a class="btn btn-primary" href="@Url.Action("Edit", "ArtistPage", new { id = Model.Artist.ArtistId })">Edit Artist</a>
-            <form method="post" action="@Url.Action("DeleteConfirmed", "ArtistPage", new { id = Model.Artist.ArtistId })" class="d-inline">
-                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this artist?');">Delete Artist</button>
-            </form>
+            <a class="btn btn-primary" href="@Url.Action("Edit", "ArtistPage", new { id = Model.Artist.ArtistId })">Edit </a>
+            <a class="btn btn-danger" href="@Url.Action("ConfirmDelete", "ArtistPage", new { id = Model.Artist.ArtistId })">Delete</a>
             <a class="btn btn-secondary" href="@Url.Action("List", "ArtistPage")">Back to List</a>
         </div>
     }
