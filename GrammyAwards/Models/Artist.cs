@@ -27,6 +27,7 @@ namespace GrammyAwards.Models
 
         public int NumberOfSongs { get; set; } 
         public List<SongArtistDto> Songs { get; set; } 
+        public string Role { get; set; }
     }
 
 }

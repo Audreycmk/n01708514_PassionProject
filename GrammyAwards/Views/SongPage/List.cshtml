@@ -1,0 +1,48 @@
+@model IEnumerable<GrammyAwards.Models.SongDto>
+
+@{
+    ViewData["Title"] = "Songs";
+}
+
+<h1>Songs</h1>
+
+<p>
+    <a asp-action="New">Create New Song</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Song Title
+            </th>
+            <th>
+                Album
+            </th>
+            <th>
+                Release Year
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SongName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Album)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReleaseYear)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.SongId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.SongId">Details</a> |
+                    <a asp-action="ConfirmDelete" asp-route-id="@item.SongId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

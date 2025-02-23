@@ -26,6 +26,7 @@ namespace GrammyAwards.Models
         public string Album { get; set; }
 
         public int ReleaseYear { get; set; }
+        public ArtistDto Artist { get; set; }
         
     }
 

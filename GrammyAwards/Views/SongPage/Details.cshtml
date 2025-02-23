@@ -1,0 +1,87 @@
+@model GrammyAwards.Models.ViewModels.SongDetails
+
+@{
+    ViewData["Title"] = "Song Details";
+}
+
+<div class="container mt-5">
+    <h1 class="mb-4">Song Details</h1>
+
+    <!-- Success Message Section -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    @if (Model?.Songs != null)
+    {
+        <!-- Song Information Section -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2>@Model.Songs.FirstOrDefault()?.SongName</h2> <!-- Display song name -->
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-3">Song ID:</dt>
+                    <dd class="col-sm-9">@Model.Songs.FirstOrDefault()?.SongId</dd> <!-- Display song ID -->
+                    <dt class="col-sm-3">Song Name:</dt>
+                    <dd class="col-sm-9">@Model.Songs.FirstOrDefault()?.SongName</dd> <!-- Display song name -->
+                    <dt class="col-sm-3">Album:</dt>
+                    <dd class="col-sm-9">@Model.Songs.FirstOrDefault()?.Album</dd> <!-- Display album name -->
+                    <dt class="col-sm-3">Release Year:</dt>
+                    <dd class="col-sm-9">@Model.Songs.FirstOrDefault()?.ReleaseYear</dd> <!-- Display release year -->
+                </dl>
+            </div>
+        </div>
+
+        <!-- Artists Table Section -->
+        <h3 class="mb-3">Artists of @Model.Songs.FirstOrDefault()?.SongName</h3>
+        @if (Model.ArtistSongs != null && Model.ArtistSongs.Any())
+        {
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Artist Name</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var songArtistDto in Model.ArtistSongs)
+                        {
+                            <tr>
+                                <td>@songArtistDto.ArtistName</td>
+                                <td>@songArtistDto.Role</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <p>No artists available for this song.</p>
+        }
+
+        <!-- Action Buttons Section -->
+        <div class="mt-4">
+            <!-- Add Artist Button (Link to another page later) -->
+            <button type="button" class="btn btn-secondary" disabled>Add Artist</button>
+        </div>
+        <div class="mt-4">
+            <a class="btn btn-primary" href="@Url.Action("Edit", "SongPage", new { id = Model.Songs.FirstOrDefault()?.SongId })">Edit</a>
+            <a class="btn btn-danger" href="@Url.Action("ConfirmDelete", "SongPage", new { id = Model.Songs.FirstOrDefault()?.SongId })">Delete</a>
+            <a class="btn btn-secondary" href="@Url.Action("List", "SongPage")">Back to List</a>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-danger mt-4" role="alert">
+            <h4>Error</h4>
+            <p>Song data is not available.</p>
+            <a class="btn btn-secondary" href="@Url.Action("List", "SongPage")">Back to List</a>
+        </div>
+    }
+</div>
