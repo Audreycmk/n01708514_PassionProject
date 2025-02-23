@@ -51,33 +51,59 @@ namespace GrammyAwards.Services
         }
 
         public async Task<ServiceResponse<SongArtistDto>> AddSongArtist(SongArtistDto songArtistDto)
+{
+    var response = new ServiceResponse<SongArtistDto>();
+
+    try
+    {
+        // Validate required fields
+        if (songArtistDto.SongId <= 0 || songArtistDto.ArtistId <= 0)
         {
-            var response = new ServiceResponse<SongArtistDto>();
-
-            var songArtist = new SongArtist
-            {
-                SongId = songArtistDto.SongId,
-                ArtistId = songArtistDto.ArtistId,
-                Role = songArtistDto.Role
-            };
-
-            try
-            {
-                _context.SongArtists.Add(songArtist);
-                await _context.SaveChangesAsync();
-                response.Status = ServiceResponse.ServiceStatus.Created;
-                response.CreatedId = songArtist.SongArtistId;
-                response.Data = songArtistDto;
-            }
-            catch (Exception ex)
-            {
-                response.Status = ServiceResponse.ServiceStatus.Error;
-                response.Messages.Add("Error adding song-artist relationship.");
-                response.Messages.Add(ex.Message);
-            }
-
+            response.Status = ServiceResponse.ServiceStatus.Error;
+            response.Messages.Add("Invalid SongId or ArtistId.");
             return response;
         }
+
+        // Check if the song-artist relationship already exists
+        bool exists = await _context.SongArtists.AnyAsync(sa =>
+            sa.SongId == songArtistDto.SongId && 
+            sa.ArtistId == songArtistDto.ArtistId && 
+            sa.Role == songArtistDto.Role);
+
+        if (exists)
+        {
+            response.Status = ServiceResponse.ServiceStatus.Error;
+            response.Messages.Add("This artist is already linked to this song with the same role.");
+            return response;
+        }
+
+        // Create new SongArtist entity
+        var songArtist = new SongArtist
+        {
+            SongId = songArtistDto.SongId,
+            ArtistId = songArtistDto.ArtistId,
+            Role = songArtistDto.Role
+        };
+
+        _context.SongArtists.Add(songArtist);
+        await _context.SaveChangesAsync();
+
+        // Set response
+        response.Status = ServiceResponse.ServiceStatus.Created;
+        response.CreatedId = songArtist.SongArtistId;
+        response.Data = songArtistDto;
+    }
+    catch (Exception ex)
+    {
+        response.Status = ServiceResponse.ServiceStatus.Error;
+        response.Messages.Add("Error adding song-artist relationship.");
+        response.Messages.Add(ex.Message);
+    }
+
+    return response;
+}
+
+        
 
         public async Task<ServiceResponse> UpdateSongArtist(int id, SongArtistDto songArtistDto)
         {

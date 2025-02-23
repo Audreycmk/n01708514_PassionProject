@@ -57,51 +57,23 @@ namespace GrammyAwards.Controllers
                 return View(ArtistInfo);
             }
         }
-
-        // View for creating a new artist
-       public async Task<IActionResult> New()
-{
-    var model = new ArtistDto
-    {
-        Songs = (await _songService.List())
-            .Select(song => new SongArtistDto
-            {
-                SongId = song.SongId,
-                SongName = song.SongName,
-                // Any other properties like Role can be added here
-            })
-            .ToList()
-    };
-    return View(model);
-}
-
-        // Add a new artist
-        [HttpPost]
-        public async Task<IActionResult> Create(ArtistDto artist)
+        public ActionResult New()
         {
-            if (ModelState.IsValid)
-            {
-                // Add the artist
-                var createdArtist = await _artistService.AddArtist(artist);
-
-                // Redirect to the Details page with the newly created artist's id
-                return RedirectToAction("Details", new { id = createdArtist.ArtistId });
-            }
-
-            // If validation fails, re-populate song list and return to view with error messages
-            var songArtistDtos = await _songArtistService.GetSongsByArtist(artist.ArtistId);
-
-            // Map SongArtistDto to SongDto
-            artist.Songs = songArtistDtos.Select(sa => new SongArtistDto
-            {
-                SongId = sa.SongId,
-                SongName = sa.SongName,
-                Role = sa.Role
-            }).ToList();
-
-            return View("New", artist);
+            return View();
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Add(ArtistDto artistDto)
+        {
+            ServiceResponse response = await _artistService.AddArtist(artistDto);
+
+            if (response.Status == ServiceResponse.ServiceStatus.Created)
+            {
+                return RedirectToAction("Details", "ArtistPage", new { id = response.CreatedId });
+            }
+
+            return View("Error", new ErrorViewModel { Errors = response.Messages });
+        }
 
 
         //GET ArtistPage/Edit/{id}

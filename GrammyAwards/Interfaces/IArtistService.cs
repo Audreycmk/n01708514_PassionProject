@@ -11,7 +11,7 @@ namespace GrammyAwards.Interfaces
 
     Task<ServiceResponse> UpdateArtist(int artistId, ArtistDto ArtistDto);
 
-    Task<ArtistDto> AddArtist(ArtistDto artistDto);
+    Task<ServiceResponse> AddArtist(ArtistDto ArtistDto);
 
     Task<ServiceResponse> DeleteArtist(int id);
 }

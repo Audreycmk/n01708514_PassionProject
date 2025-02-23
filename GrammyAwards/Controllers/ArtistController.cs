@@ -10,7 +10,7 @@ namespace GrammyAwards.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ArtistsController : ControllerBase
+    public class ArtistsController : Controller
     {
         private readonly ApplicationDbContext _context;
 
@@ -75,38 +75,22 @@ namespace GrammyAwards.Controllers
         [HttpPost("Add")]
         public async Task<ActionResult<ArtistDto>> AddArtist(ArtistDto artistDto)
         {
-            var response = new ServiceResponse<ArtistDto>();
-
-            try
+            // Ensure we create the artist correctly
+            var artist = new Artist
             {
-                // Create new artist and add to the database
-                var artist = new Artist
-                {
-                    ArtistName = artistDto.ArtistName,
-                    Nationality = artistDto.Nationality,
-                    // Add other properties if needed
-                };
+                ArtistName = artistDto.ArtistName,
+                Nationality = artistDto.Nationality
+            };
 
-                // Add artist to the context and save changes
-                _context.Artists.Add(artist);
-                await _context.SaveChangesAsync();
+            _context.Artists.Add(artist);
+            await _context.SaveChangesAsync();
 
-                // Set the ArtistId and return the artistDto
-                artistDto.ArtistId = artist.ArtistId;  // Ensure the ArtistId is set
-
-                response.Status = ServiceResponse.ServiceStatus.Created;
-                response.CreatedId = artist.ArtistId;  // You can also include the artist's ID in the response
-                response.Data = artistDto;  // Returning the artist data in the response
-
-                return CreatedAtAction(nameof(FindArtist), new { id = artist.ArtistId }, artistDto);
-            }
-            catch (Exception ex)
+            return CreatedAtAction(nameof(FindArtist), new { id = artist.ArtistId }, new ArtistDto
             {
-                response.Status = ServiceResponse.ServiceStatus.Error;
-                response.Messages.Add("Error adding artist.");
-                response.Messages.Add(ex.Message);  // Capture the exception message
-                return StatusCode(500, response.Messages);
-            }
+                ArtistId = artist.ArtistId,
+                ArtistName = artist.ArtistName,
+                Nationality = artist.ArtistName
+            });
         }
 
         /// <summary>
@@ -160,5 +144,34 @@ namespace GrammyAwards.Controllers
                 return StatusCode(500, "Error deleting artist.");
             }
         }
+
+        /// <summary>
+        /// Creates a new artist (MVC version for UI).
+        /// </summary>
+        // [HttpPost("Create")]
+        // public async Task<IActionResult> Create(ArtistDto artistDto)
+        // {
+        //     Console.WriteLine("➡️ Create in ArtistController called");
+
+        //     if (!ModelState.IsValid)
+        //     {
+        //         Console.WriteLine("ModelState Invalid");
+        //         return BadRequest(ModelState);
+        //     }
+
+        //     // Create a new artist object
+        //     var artist = new Artist
+        //     {
+        //         ArtistName = artistDto.ArtistName,
+        //         Nationality = artistDto.Nationality
+        //     };
+
+        //     _context.Artists.Add(artist); 
+        //     await _context.SaveChangesAsync();
+
+        //     Console.WriteLine($"Artist Created: {artist.ArtistId}");
+
+        //     return RedirectToAction(nameof(FindArtist), new { id = artist.ArtistId });
+        // }
     }
 }
