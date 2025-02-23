@@ -18,6 +18,8 @@
                 <dl class="row">
                     <dt class="col-sm-3">Artist ID:</dt>
                     <dd class="col-sm-9">@Model.Artist.ArtistId</dd>
+                    <dt class="col-sm-3">Artist Name:</dt>
+                    <dd class="col-sm-9">@Model.Artist.ArtistName</dd>
                     <dt class="col-sm-3">Nationality:</dt>
                     <dd class="col-sm-9">@Model.Artist.Nationality</dd>
                 </dl>
@@ -25,7 +27,7 @@
         </div>
 
         <!-- Songs Table Section -->
-        <h3 class="mb-3">Songs</h3>
+        <h3 class="mb-3">Songs of @Model.Artist.ArtistName</h3> 
         @if (Model.ArtistSongs != null && Model.ArtistSongs.Any())
         {
             <div class="table-responsive">

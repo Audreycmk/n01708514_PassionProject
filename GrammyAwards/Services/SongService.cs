@@ -146,20 +146,15 @@ namespace GrammyAwards.Services
     }
 
     // New method to get songs for a specific artist
-    public async Task<IEnumerable<SongDto>> GetSongsForArtist(int artistId)
-    {
-        return await _context.SongArtists
-            .Where(sa => sa.ArtistId == artistId)  // Filter by artistId
-            .Include(sa => sa.Song)  // Include related Song data
-            .Select(sa => new SongDto
-            {
-                SongId = sa.Song.SongId,
-                SongName = sa.Song.SongName,
-                Album = sa.Song.Album,
-                ReleaseYear = sa.Song.ReleaseYear
-            })
-            .ToListAsync();
-    }
+    public async Task<IEnumerable<string>> GetSongsForArtist(int artistId)
+{
+    return await _context.SongArtists
+        .Where(sa => sa.ArtistId == artistId)  // Filter by artistId
+        .Include(sa => sa.Song)  // Include related Song data
+        .Select(sa => sa.Song.SongName)  // Only select SongName
+        .ToListAsync();
+}
+
 }
 
 }

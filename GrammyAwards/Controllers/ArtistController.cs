@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using GrammyAwards.Interfaces;
 using GrammyAwards.Models;
+using GrammyAwards.Data;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace GrammyAwards.Controllers
 {
@@ -10,11 +12,12 @@ namespace GrammyAwards.Controllers
     [ApiController]
     public class ArtistsController : ControllerBase
     {
-        private readonly IArtistService _artistService;
+        private readonly ApplicationDbContext _context;
 
-        public ArtistsController(IArtistService artistService)
+        // Inject ApplicationDbContext into the controller
+        public ArtistsController(ApplicationDbContext context)
         {
-            _artistService = artistService;
+            _context = context;
         }
 
         /// <summary>
@@ -23,8 +26,24 @@ namespace GrammyAwards.Controllers
         [HttpGet("Get")]
         public async Task<ActionResult<IEnumerable<ArtistDto>>> GetArtists()
         {
-            var artists = await _artistService.List();
-            return Ok(artists);
+            var artists = await _context.Artists.ToListAsync();
+            var artistDtos = new List<ArtistDto>();
+
+            foreach (var artist in artists)
+            {
+                int songCount = await _context.SongArtists
+                    .Where(sa => sa.ArtistId == artist.ArtistId)
+                    .CountAsync();
+
+                artistDtos.Add(new ArtistDto
+                {
+                    ArtistId = artist.ArtistId,
+                    ArtistName = artist.ArtistName,
+                    Nationality = artist.Nationality,
+                    NumberOfSongs = songCount
+                });
+            }
+            return Ok(artistDtos);
         }
 
         /// <summary>
@@ -33,12 +52,21 @@ namespace GrammyAwards.Controllers
         [HttpGet("Find/{id}")]
         public async Task<ActionResult<ArtistDto>> FindArtist(int id)
         {
-            var artist = await _artistService.FindArtist(id);
+            var artist = await _context.Artists.FirstOrDefaultAsync(e => e.ArtistId == id);
             if (artist == null)
             {
                 return NotFound();
             }
-            return Ok(artist);
+
+            int numberOfSongs = await _context.SongArtists.CountAsync(sa => sa.ArtistId == id);
+
+            return Ok(new ArtistDto
+            {
+                ArtistId = artist.ArtistId,
+                ArtistName = artist.ArtistName,
+                Nationality = artist.Nationality,
+                NumberOfSongs = numberOfSongs
+            });
         }
 
         /// <summary>
@@ -47,12 +75,38 @@ namespace GrammyAwards.Controllers
         [HttpPost("Add")]
         public async Task<ActionResult<ArtistDto>> AddArtist(ArtistDto artistDto)
         {
-            var response = await _artistService.AddArtist(artistDto);
-            if (response.Status == ServiceResponse.ServiceStatus.Error)
+            var response = new ServiceResponse<ArtistDto>();
+
+            try
             {
+                // Create new artist and add to the database
+                var artist = new Artist
+                {
+                    ArtistName = artistDto.ArtistName,
+                    Nationality = artistDto.Nationality,
+                    // Add other properties if needed
+                };
+
+                // Add artist to the context and save changes
+                _context.Artists.Add(artist);
+                await _context.SaveChangesAsync();
+
+                // Set the ArtistId and return the artistDto
+                artistDto.ArtistId = artist.ArtistId;  // Ensure the ArtistId is set
+
+                response.Status = ServiceResponse.ServiceStatus.Created;
+                response.CreatedId = artist.ArtistId;  // You can also include the artist's ID in the response
+                response.Data = artistDto;  // Returning the artist data in the response
+
+                return CreatedAtAction(nameof(FindArtist), new { id = artist.ArtistId }, artistDto);
+            }
+            catch (Exception ex)
+            {
+                response.Status = ServiceResponse.ServiceStatus.Error;
+                response.Messages.Add("Error adding artist.");
+                response.Messages.Add(ex.Message);  // Capture the exception message
                 return StatusCode(500, response.Messages);
             }
-            return CreatedAtAction(nameof(FindArtist), new { id = response.CreatedId }, artistDto);
         }
 
         /// <summary>
@@ -61,16 +115,25 @@ namespace GrammyAwards.Controllers
         [HttpPut("Update/{id}")]
         public async Task<IActionResult> UpdateArtist(int id, ArtistDto artistDto)
         {
-            var response = await _artistService.UpdateArtist(id, artistDto);
-            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
+            var artist = await _context.Artists.FindAsync(id);
+            if (artist == null)
             {
-                return NotFound(response.Messages);
+                return NotFound();
             }
-            else if (response.Status == ServiceResponse.ServiceStatus.Error)
+
+            // Update artist properties
+            artist.ArtistName = artistDto.ArtistName;
+            artist.Nationality = artistDto.Nationality;
+
+            try
             {
-                return StatusCode(500, response.Messages);
+                await _context.SaveChangesAsync();
+                return NoContent();
             }
-            return NoContent();
+            catch (Exception)
+            {
+                return StatusCode(500, "Error updating artist.");
+            }
         }
 
         /// <summary>
@@ -79,16 +142,23 @@ namespace GrammyAwards.Controllers
         [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> DeleteArtist(int id)
         {
-            var response = await _artistService.DeleteArtist(id);
-            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
+            var artist = await _context.Artists.FindAsync(id);
+            if (artist == null)
             {
                 return NotFound();
             }
-            else if (response.Status == ServiceResponse.ServiceStatus.Error)
+
+            _context.Artists.Remove(artist);
+
+            try
             {
-                return StatusCode(500, response.Messages);
+                await _context.SaveChangesAsync();
+                return NoContent();
             }
-            return NoContent();
+            catch (Exception)
+            {
+                return StatusCode(500, "Error deleting artist.");
+            }
         }
     }
 }

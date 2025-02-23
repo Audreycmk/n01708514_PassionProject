@@ -91,39 +91,24 @@ namespace GrammyAwards.Services
             return response;
         }
 
-        public async Task<ServiceResponse> AddArtist(ArtistDto artistDto)
+        public async Task<ArtistDto> AddArtist(ArtistDto artistDto)
         {
-            var response = new ServiceResponse();
-
-            if (string.IsNullOrWhiteSpace(artistDto.ArtistName))
-            {
-                response.Status = ServiceResponse.ServiceStatus.Error;
-                response.Messages.Add("Artist name is required.");
-                return response;
-            }
-
+            // Create new artist and add to database
             var artist = new Artist
             {
                 ArtistName = artistDto.ArtistName,
-                Nationality = artistDto.Nationality
+                Nationality = artistDto.Nationality,
+                // Other properties
             };
 
-            try
-            {
-                _context.Artists.Add(artist);
-                await _context.SaveChangesAsync();
-                response.Status = ServiceResponse.ServiceStatus.Created;
-                response.CreatedId = artist.ArtistId;
-            }
-            catch (Exception ex)
-            {
-                response.Status = ServiceResponse.ServiceStatus.Error;
-                response.Messages.Add("There was an error adding the artist.");
-                response.Messages.Add(ex.Message);
-            }
+            _context.Artists.Add(artist);
+            await _context.SaveChangesAsync();
 
-            return response;
+            // Assuming you want to return the newly created artist's details
+            artistDto.ArtistId = artist.ArtistId;  // Ensure the ArtistId is set
+            return artistDto;
         }
+
 
         public async Task<ServiceResponse> DeleteArtist(int id)
         {

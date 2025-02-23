@@ -17,6 +17,6 @@ namespace GrammyAwards.Interfaces
         Task<ServiceResponse> DeleteSong(int id);  // Existing method
 
         // New method to get songs for a specific artist
-        Task<IEnumerable<SongDto>> GetSongsForArtist(int artistId);  // Add this method
+        Task<IEnumerable<string>> GetSongsForArtist(int artistId);
     }
 }

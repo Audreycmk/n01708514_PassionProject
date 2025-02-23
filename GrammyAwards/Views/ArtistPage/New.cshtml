@@ -4,38 +4,70 @@
     ViewData["Title"] = "New Artist";
 }
 
-<h1>New Artist</h1>
+<div class="container mt-5">
+    <h1 class="mb-4">Add New Artist</h1>
 
-<h4>Artist Details</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Add">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            
-            <div class="form-group">
-                <label asp-for="ArtistName" class="control-label"></label>
-                <input asp-for="ArtistName" class="form-control" />
-                <span asp-validation-for="ArtistName" class="text-danger"></span>
+    <form method="post" asp-action="Create" asp-controller="ArtistPage">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h2>Artist Information</h2>
             </div>
-            
-            <div class="form-group">
-                <label asp-for="Nationality" class="control-label"></label>
-                <input asp-for="Nationality" class="form-control" />
-                <span asp-validation-for="Nationality" class="text-danger"></span>
+            <div class="card-body">
+                <!-- Artist Name -->
+                <div class="form-group row">
+                    <label asp-for="ArtistName" class="col-sm-3 col-form-label">Artist Name:</label>
+                    <div class="col-sm-9">
+                        <input asp-for="ArtistName" class="form-control" required />
+                        <span asp-validation-for="ArtistName" class="text-danger"></span>
+                    </div>
+                </div>
+                <!-- Nationality -->
+                <div class="form-group row">
+                    <label asp-for="Nationality" class="col-sm-3 col-form-label">Nationality:</label>
+                    <div class="col-sm-9">
+                        <input asp-for="Nationality" class="form-control" required />
+                        <span asp-validation-for="Nationality" class="text-danger"></span>
+                    </div>
+                </div>
             </div>
-            
-            <div class="form-group">
-                <input type="submit" value="Add" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+        </div>
 
-<div>
-     <a class="btn btn-secondary" href="@Url.Action("List", "ArtistPage")">Back to List</a>
+        <!-- Song and Role Section -->
+        <h3 class="mb-3">Link Songs to Artist</h3>
+        <div class="form-group row">
+            <label for="SongId" class="col-sm-3 col-form-label">Song Title:</label>
+            <div class="col-sm-9">
+                <select class="form-control" id="SongId" name="SongId">
+                    <option value="">Select a song</option>
+                    @foreach (var song in Model.Songs) 
+                    {
+                        <option value="@song.SongId">@song.SongName</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="Role" class="col-sm-3 col-form-label">Role:</label>
+            <div class="col-sm-9">
+                <select class="form-control" id="Role" name="Role">
+                    <option value="Primary Artist">Primary Artist</option>
+                    <option value="Featured Artist">Featured Artist</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mt-4">
+            <!-- Submit Button (Save Artist) -->
+            <button type="submit" class="btn btn-primary">Save Artist</button>
+            <!-- Back to List Button -->
+            <a class="btn btn-secondary" href="@Url.Action("List", "ArtistPage")">Back to List</a>
+        </div>
+    </form>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <!-- Add validation scripts -->
+    <partial name="_ValidationScriptsPartial" />
 }
