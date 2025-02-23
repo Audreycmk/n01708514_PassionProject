@@ -1,158 +1,98 @@
-using GrammyAwards.Data;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using GrammyAwards.Interfaces;
 using GrammyAwards.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-[Route("api/[controller]")]
-[ApiController]
-public class SongAwardController : ControllerBase
+namespace GrammyAwards.Controllers
 {
-    private readonly ApplicationDbContext _context;
-
-    public SongAwardController(ApplicationDbContext context)
+    [Route("api/[controller]")]
+    [ApiController]
+    public class SongAwardController : ControllerBase
     {
-        _context = context;
-    }
+        private readonly ISongAwardService _songAwardService;
 
-    /// <summary>
-    /// Retrieves a list of all song-award relationships.
-    /// </summary>
-    /// <example>
-    /// GET api/SongAward/Get -> [{"songAwardId":1, "songId":1, "awardId":1, "awardStatus":"Winner"}]
-    /// </example>
-    /// <returns>A list of SongAwardDto objects.</returns>
-    [HttpGet("Get")]
-    public async Task<ActionResult<IEnumerable<SongAwardDto>>> GetSongAwards()
-    {
-        var songAwards = await _context.SongAwards
-            .Select(sa => new SongAwardDto
+        public SongAwardController(ISongAwardService songAwardService)
+        {
+            _songAwardService = songAwardService;
+        }
+
+        [HttpGet("GetSongsByAward/{awardId}")]
+        public async Task<ActionResult<IEnumerable<SongAwardDto>>> GetSongsByAward(int awardId)
+        {
+            var songAwards = await _songAwardService.GetSongsByAward(awardId);
+            return Ok(songAwards);
+        }
+
+        [HttpGet("GetAwardsBySong/{songId}")]
+        public async Task<ActionResult<IEnumerable<SongAwardDto>>> GetAwardsBySong(int songId)
+        {
+            var songAwards = await _songAwardService.GetAwardsBySong(songId);
+            return Ok(songAwards);
+        }
+
+        [HttpPost("Add")]
+        public async Task<ActionResult<SongAwardDto>> AddSongAward(SongAwardDto songAwardDto)
+        {
+            var response = await _songAwardService.AddSongAward(songAwardDto);
+            if (response.Status == ServiceResponse.ServiceStatus.Error)
             {
-                SongAwardId = sa.SongAwardId,
-                SongId = sa.SongId,
-                AwardId = sa.AwardId,
-                AwardStatus = sa.AwardStatus
-            })
-            .ToListAsync();
+                return Conflict(response.Messages);
+            }
+            return CreatedAtAction(nameof(GetSongsByAward), new { awardId = response.CreatedId }, songAwardDto);
+        }
 
-        return Ok(songAwards);
-    }
-
-    /// <summary>
-    /// Retrieves a specific song-award relationship by ID.
-    /// </summary>
-    /// <example>
-    /// GET api/SongAward/Find/1 -> {"songAwardId":1, "songId":1, "awardId":1, "awardStatus":"Winner"}
-    /// </example>
-    /// <returns>The song-award object if found, otherwise NotFound.</returns>
-    [HttpGet("Find/{id}")]
-    public async Task<ActionResult<SongAwardDto>> GetSongAward(int id)
-    {
-        var songAward = await _context.SongAwards
-            .Where(sa => sa.SongAwardId == id)
-            .Select(sa => new SongAwardDto
+        [HttpPut("Update/{id}")]
+        public async Task<ActionResult> UpdateSongAward(int songAwardId, SongAwardDto songAwardDto)
+        {
+            if (songAwardId != songAwardDto.SongAwardId)
             {
-                SongAwardId = sa.SongAwardId,
-                SongId = sa.SongId,
-                AwardId = sa.AwardId,
-                AwardStatus = sa.AwardStatus
-            })
-            .FirstOrDefaultAsync();
+                return BadRequest("ID mismatch.");
+            }
 
-        if (songAward == null)
-        {
-            return NotFound();
+            var response = await _songAwardService.UpdateSongAward(songAwardId, songAwardDto);
+            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
+            {
+                return NotFound();
+            }
+            if (response.Status == ServiceResponse.ServiceStatus.Error)
+            {
+                return Conflict(response.Messages);
+            }
+            return NoContent();
         }
 
-        return Ok(songAward);
+        [HttpDelete("UnlinkSongFromAward/{songId}/{awardId}")]
+    public async Task<ActionResult<ServiceResponse>> UnlinkSongFromAward(int songId, int awardId)
+    {
+        var response = await _songAwardService.UnlinkSongFromAward(songId, awardId);
+
+        if (response.Status == ServiceResponse.ServiceStatus.NotFound)
+        {
+            return NotFound(response); // 404 Not Found
+        }
+
+        if (response.Status == ServiceResponse.ServiceStatus.Error)
+        {
+            return BadRequest(response); // 400 Bad Request
+        }
+
+        return Ok(response); // 200 OK if unlinking was successful
     }
 
-    /// <summary>
-    /// Adds a new song-award relationship.
-    /// </summary>
-    /// <example>
-    /// POST api/SongAward/Add
-    /// Body: {"songId":1, "awardId":1, "awardStatus":"Winner"}
-    /// </example>
-    /// <returns>The created SongAwardDto object with its assigned ID.</returns>
-    [HttpPost("Add")]
-    public async Task<ActionResult<SongAwardDto>> CreateSongAward(SongAwardDto songAwardDto)
-    {
-        // Map from SongAwardDto to SongAward (the entity)
-        var songAward = new SongAward
+        [HttpDelete("{songAwardId}")]
+        public async Task<ActionResult> DeleteSongAward(int songAwardId)
         {
-            SongId = songAwardDto.SongId,
-            AwardId = songAwardDto.AwardId,
-            AwardStatus = songAwardDto.AwardStatus
-        };
-
-        // Add the SongAward entity to the context
-        _context.SongAwards.Add(songAward);
-        await _context.SaveChangesAsync();
-
-        // Map from SongAward entity back to SongAwardDto for the response
-        var createdDto = new SongAwardDto
-        {
-            SongAwardId = songAward.SongAwardId, // The ID is set after SaveChangesAsync
-            SongId = songAward.SongId,
-            AwardId = songAward.AwardId,
-            AwardStatus = songAward.AwardStatus
-        };
-
-        // Return the created DTO with the location of the new resource
-        return CreatedAtAction(nameof(GetSongAward), new { id = songAward.SongAwardId }, createdDto);
-    }
-
-    // <summary>
-    /// Updates an existing song-award relationship.
-    /// </summary>
-    /// <example>
-    /// PUT api/SongAward/Put/1
-    /// Body: {"songAwardId":1, "songId":1, "awardId":1, "awardStatus":"Winner"}
-    /// </example>
-    /// <returns>NoContent if successful, otherwise an error response.</returns>
-    [HttpPut("Put/{id}")]
-    public async Task<IActionResult> UpdateSongAward(int id, SongAwardDto songAwardDto)
-    {
-        if (id != songAwardDto.SongAwardId)
-        {
-            return BadRequest();
+            var response = await _songAwardService.DeleteSongAward(songAwardId);
+            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
+            {
+                return NotFound();
+            }
+            if (response.Status == ServiceResponse.ServiceStatus.Error)
+            {
+                return Conflict(response.Messages);
+            }
+            return NoContent();
         }
-
-        var existingSongAward = await _context.SongAwards.FindAsync(id);
-        if (existingSongAward == null)
-        {
-            return NotFound();
-        }
-
-        existingSongAward.SongId = songAwardDto.SongId;
-        existingSongAward.AwardId = songAwardDto.AwardId;
-        existingSongAward.AwardStatus = songAwardDto.AwardStatus;
-
-        _context.Entry(existingSongAward).State = EntityState.Modified;
-        await _context.SaveChangesAsync();
-
-        return NoContent();
-    }
-
-    /// <summary>
-    /// Deletes a song-award relationship by ID.
-    /// </summary>
-    /// <example>
-    /// DELETE api/SongAward/Delete/1
-    /// </example>
-    /// <returns>NoContent if successful, otherwise NotFound.</returns>
-    [HttpDelete("Delete/{id}")]
-    public async Task<IActionResult> DeleteSongAward(int id)
-    {
-        var songAward = await _context.SongAwards.FindAsync(id);
-        if (songAward == null)
-        {
-            return NotFound();
-        }
-
-        _context.SongAwards.Remove(songAward);
-        await _context.SaveChangesAsync();
-
-        return NoContent();
     }
 }

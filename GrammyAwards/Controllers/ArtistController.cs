@@ -1,154 +1,94 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using GrammyAwards.Interfaces;
 using GrammyAwards.Models;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using GrammyAwards.Data;
 
 namespace GrammyAwards.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ArtistController : ControllerBase
+    public class ArtistsController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IArtistService _artistService;
 
-        public ArtistController(ApplicationDbContext context)
+        public ArtistsController(IArtistService artistService)
         {
-            _context = context;
+            _artistService = artistService;
         }
 
         /// <summary>
-        /// Returns a list of artists in the system.
+        /// Returns a list of all artists.
         /// </summary>
-        /// <example>
-        /// GET api/Artist/Get -> [{"artistId":1, "artistName":"Talyor Swift"}]
-        /// </example>
-        /// <returns>
-        /// A list of Artist objects.
-        /// </returns>
-        [HttpGet(template:"Get")]
-        public async Task<ActionResult<IEnumerable<Artist>>> GetArtists()
+        [HttpGet("Get")]
+        public async Task<ActionResult<IEnumerable<ArtistDto>>> GetArtists()
         {
-            return await _context.Artists.ToListAsync();
+            var artists = await _artistService.List();
+            return Ok(artists);
         }
 
         /// <summary>
-        /// Retrieves a specific artist by ID.
+        /// Returns a single artist by ID.
         /// </summary>
-        /// <example>
-        /// GET api/Artist/Find/1 -> {"artistId":1, "artistName":"Talyor Swift"}
-        /// </example>
-        /// <returns>
-        /// The artist object if found, otherwise NotFound.
-        /// </returns>
-        [HttpGet(template:"Find/{id}")]
-        public async Task<ActionResult<Artist>> GetArtist(int id)
+        [HttpGet("Find/{id}")]
+        public async Task<ActionResult<ArtistDto>> FindArtist(int id)
         {
-            var artist = await _context.Artists.FindAsync(id);
-
+            var artist = await _artistService.FindArtist(id);
             if (artist == null)
             {
                 return NotFound();
             }
-
-            return artist;
+            return Ok(artist);
         }
 
         /// <summary>
-        /// Adds a new artist to the system.
+        /// Adds a new artist.
         /// </summary>
-        /// <example>
-        /// POST api/Artist/Add 
-        /// Body: {"artistName": "/// <summary>
-        /// Adds a new artist to the system.
-        /// </summary>
-        /// <example>
-        /// POST api/Artist/Add 
-        /// {"artistId": 1,"artistName": "Talyor Swift","nationality": "American"}
-        /// </example>
-        /// <returns>
-        /// The created artist object with its assigned ID.
-        /// </returns>"}
-        /// </example>
-        /// <returns>
-        /// The created artist object with its assigned ID.
-        /// </returns>
-        [HttpPost(template:"Add")]
-        public async Task<ActionResult<Artist>> PostArtist(Artist artist)
+        [HttpPost("Add")]
+        public async Task<ActionResult<ArtistDto>> AddArtist(ArtistDto artistDto)
         {
-            _context.Artists.Add(artist);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetArtist), new { id = artist.ArtistId }, artist);
+            var response = await _artistService.AddArtist(artistDto);
+            if (response.Status == ServiceResponse.ServiceStatus.Error)
+            {
+                return StatusCode(500, response.Messages);
+            }
+            return CreatedAtAction(nameof(FindArtist), new { id = response.CreatedId }, artistDto);
         }
 
-        // <summary>
-        /// Updates an existing artist in the system.
+        /// <summary>
+        /// Updates an existing artist.
         /// </summary>
-        /// <example>
-        /// PUT api/Artist/Put/1 
-        /// Body: {"artistId": 1, "artistName": "Taylor"}
-        /// </example>
-        /// <returns>
-        /// NoContent if successful, otherwise an error response.
-        /// </returns>
-        [HttpPut(template:"Put/{id}")]
-        public async Task<IActionResult> PutArtist(int id, Artist artist)
+        [HttpPut("Update/{id}")]
+        public async Task<IActionResult> UpdateArtist(int id, ArtistDto artistDto)
         {
-            if (id != artist.ArtistId)
+            var response = await _artistService.UpdateArtist(id, artistDto);
+            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
             {
-                return BadRequest();
+                return NotFound(response.Messages);
             }
-
-            _context.Entry(artist).State = EntityState.Modified;
-
-            try
+            else if (response.Status == ServiceResponse.ServiceStatus.Error)
             {
-                await _context.SaveChangesAsync();
+                return StatusCode(500, response.Messages);
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ArtistExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
             return NoContent();
         }
 
         /// <summary>
-        /// Deletes an artist from the system by ID.
+        /// Deletes an artist by ID.
         /// </summary>
-        /// <example>
-        /// DELETE api/Artist/Delete/1
-        /// </example>
-        /// <returns>
-        /// NoContent if 
         [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> DeleteArtist(int id)
         {
-            var artist = await _context.Artists.FindAsync(id);
-            if (artist == null)
+            var response = await _artistService.DeleteArtist(id);
+            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
             {
                 return NotFound();
             }
-
-            _context.Artists.Remove(artist);
-            await _context.SaveChangesAsync();
-
+            else if (response.Status == ServiceResponse.ServiceStatus.Error)
+            {
+                return StatusCode(500, response.Messages);
+            }
             return NoContent();
-        }
-
-        private bool ArtistExists(int id)
-        {
-            return _context.Artists.Any(e => e.ArtistId == id);
         }
     }
 }

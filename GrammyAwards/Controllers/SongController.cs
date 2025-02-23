@@ -1,10 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using GrammyAwards.Interfaces;
 using GrammyAwards.Models;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using GrammyAwards.Data;
 
 namespace GrammyAwards.Controllers
 {
@@ -12,44 +10,44 @@ namespace GrammyAwards.Controllers
     [ApiController]
     public class SongController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly ISongService _songService;
 
-        public SongController(ApplicationDbContext context)
+        public SongController(ISongService songService)
         {
-            _context = context;
+            _songService = songService;
         }
 
         /// <summary>
         /// Retrieves a list of all songs.
         /// </summary>
         /// <example>
-        /// GET api/Song/Get -> [{"songId":1, "songName":"ME!"}]
+        /// GET api/Song/Get -> [{"songId":1, "songName":"ME!", "album": "Lover", "releaseYear": "2019"}]
         /// </example>
-        /// <returns>A list of Song objects.</returns>
-        [HttpGet(template:"Get")]
-        public async Task<ActionResult<IEnumerable<Song>>> GetSongs()
+        /// <returns>A list of SongDto objects.</returns>
+        [HttpGet("Get")]
+        public async Task<ActionResult<IEnumerable<SongDto>>> GetSongs()
         {
-            return await _context.Songs.ToListAsync();
+            var songs = await _songService.List();
+            return Ok(songs);
         }
 
         /// <summary>
         /// Retrieves a specific song by ID.
         /// </summary>
         /// <example>
-        /// GET api/Song/Find/1 -> {"songId":1, "songName":"ME!"}
+        /// GET api/Song/Find/1 -> {"songId":1, "songName":"ME!", "album": "Lover", "releaseYear": "2019"}
         /// </example>
         /// <returns>The song object if found, otherwise NotFound.</returns>
-        [HttpGet(template:"Find/{id}")] 
-        public async Task<ActionResult<Song>> GetSong(int id)
+        [HttpGet("Find/{id}")]
+        public async Task<ActionResult<SongDto>> GetSong(int id)
         {
-            var song = await _context.Songs.FindAsync(id);
-
+            var song = await _songService.FindSong(id);
             if (song == null)
             {
                 return NotFound();
             }
 
-            return song;
+            return Ok(song);
         }
 
         /// <summary>
@@ -57,16 +55,19 @@ namespace GrammyAwards.Controllers
         /// </summary>
         /// <example>
         /// POST api/Song/Add
-        /// Body: {"songName":"ME!"}
+        /// Body: {"songName":"ME!", "album": "Lover", "releaseYear": "2019"}
         /// </example>
-        /// <returns>The created Song object.</returns>
-        [HttpPost(template:"Add")]
-        public async Task<ActionResult<Song>> PostSong(Song song)
+        /// <returns>The created SongDto object.</returns>
+        [HttpPost("Add")]
+        public async Task<ActionResult<SongDto>> AddSong(SongDto songDto)
         {
-            _context.Songs.Add(song);
-            await _context.SaveChangesAsync();
+            var response = await _songService.AddSong(songDto);
+            if (response.Status == ServiceResponse.ServiceStatus.Error)
+            {
+                return StatusCode(500, response.Messages);
+            }
 
-            return CreatedAtAction(nameof(GetSong), new { id = song.SongId }, song);
+            return CreatedAtAction(nameof(GetSong), new { id = response.CreatedId }, songDto);
         }
 
         /// <summary>
@@ -74,35 +75,21 @@ namespace GrammyAwards.Controllers
         /// </summary>
         /// <example>
         /// PUT api/Song/Put/1
-        /// Body: {"songId":1, "songName":"ME!"}
+        /// Body: {"songId":1, "songName":"ME!", "album": "Lover", "releaseYear": "2019"}
         /// </example>
         /// <returns>NoContent if successful, otherwise an error response.</returns>
-        [HttpPut(template:"Put/{id}")]
-        public async Task<IActionResult> PutSong(int id, Song song)
+        [HttpPut("Put/{id}")]
+        public async Task<IActionResult> PutSong(int id, SongDto songDto)
         {
-            if (id != song.SongId)
+            var response = await _songService.UpdateSong(id, songDto);
+            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
             {
-                return BadRequest();
+                return NotFound(response.Messages);
             }
-
-            _context.Entry(song).State = EntityState.Modified;
-
-            try
+            else if (response.Status == ServiceResponse.ServiceStatus.Error)
             {
-                await _context.SaveChangesAsync();
+                return StatusCode(500, response.Messages);
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!SongExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
             return NoContent();
         }
 
@@ -116,21 +103,16 @@ namespace GrammyAwards.Controllers
         [HttpDelete("Delete/{id}")]
         public async Task<IActionResult> DeleteSong(int id)
         {
-            var song = await _context.Songs.FindAsync(id);
-            if (song == null)
+            var response = await _songService.DeleteSong(id);
+            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
             {
                 return NotFound();
             }
-
-            _context.Songs.Remove(song);
-            await _context.SaveChangesAsync();
-
+            else if (response.Status == ServiceResponse.ServiceStatus.Error)
+            {
+                return StatusCode(500, response.Messages);
+            }
             return NoContent();
-        }
-
-        private bool SongExists(int id)
-        {
-            return _context.Songs.Any(e => e.SongId == id);
         }
     }
 }

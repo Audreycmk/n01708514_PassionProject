@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9FZlFV51NPxCnyLZ9rbjH792lcSpYYHzg6p9Sal0hQc=",
+  "Hash": "tpCvBTfnbUAdkAz5DVIeeMZ4+xBrM0oyu6yHyLCQH7g=",
   "Source": "GrammyAwards",
   "BasePath": "_content/GrammyAwards",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "GrammyAwards/wwwroot",
       "Source": "GrammyAwards",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "Pattern": "**"
     }
@@ -1277,10 +1277,10 @@
       "OriginalItemSpec": "/Users/Audrey/Desktop/.nuget/packages/microsoft.aspnetcore.identity.ui/8.0.2/staticwebassets/V5/lib/jquery/LICENSE.txt"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/obj/Debug/net8.0/scopedcss/bundle/GrammyAwards.styles.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/obj/Debug/net8.0/scopedcss/bundle/GrammyAwards.styles.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "GrammyAwards#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -1295,13 +1295,13 @@
       "Integrity": "IYwk0dsprLr6wjA5KEAu5fTBYszLd8DHH4q535Un5ng=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/obj/Debug/net8.0/scopedcss/bundle/GrammyAwards.styles.css"
+      "OriginalItemSpec": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/obj/Debug/net8.0/scopedcss/bundle/GrammyAwards.styles.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/obj/Debug/net8.0/scopedcss/projectbundle/GrammyAwards.bundle.scp.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/obj/Debug/net8.0/scopedcss/projectbundle/GrammyAwards.bundle.scp.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "GrammyAwards#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -1316,13 +1316,13 @@
       "Integrity": "IYwk0dsprLr6wjA5KEAu5fTBYszLd8DHH4q535Un5ng=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/obj/Debug/net8.0/scopedcss/projectbundle/GrammyAwards.bundle.scp.css"
+      "OriginalItemSpec": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/obj/Debug/net8.0/scopedcss/projectbundle/GrammyAwards.bundle.scp.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/css/site.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/css/site.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1340,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/favicon.ico",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/favicon.ico",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -1361,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/js/site.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/js/site.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1382,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1403,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1424,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1466,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1487,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1508,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1529,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1550,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1571,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1592,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1634,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1655,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1676,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1697,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1718,10 +1718,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1739,10 +1739,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1760,10 +1760,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1781,10 +1781,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1823,10 +1823,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1844,10 +1844,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1865,10 +1865,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1886,10 +1886,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1907,10 +1907,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1928,10 +1928,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1949,10 +1949,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1970,10 +1970,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1991,10 +1991,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -2033,10 +2033,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2054,10 +2054,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2075,10 +2075,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2096,10 +2096,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2117,10 +2117,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2138,10 +2138,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2180,10 +2180,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2201,10 +2201,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2222,10 +2222,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2243,10 +2243,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2264,10 +2264,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2285,10 +2285,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2306,10 +2306,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/LICENSE",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/LICENSE",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -2327,10 +2327,10 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2348,10 +2348,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2369,10 +2369,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -2390,10 +2390,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2411,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2432,10 +2432,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2453,10 +2453,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2474,10 +2474,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/LICENSE.md",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -2495,10 +2495,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.min.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2537,10 +2537,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.min.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2558,10 +2558,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery/dist/jquery.slim#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2579,10 +2579,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.slim.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.min.js",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery/dist/jquery.slim.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2600,10 +2600,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.slim.min.js"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery/dist/jquery.slim.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2621,10 +2621,10 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.slim.min.map"
     },
     {
-      "Identity": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/LICENSE.txt",
+      "Identity": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/LICENSE.txt",
       "SourceId": "GrammyAwards",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/",
+      "ContentRoot": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/",
       "BasePath": "_content/GrammyAwards",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -2645,7 +2645,7 @@
   "Endpoints": [
     {
       "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/css/site.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2666,7 +2666,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2690,7 +2690,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/css/site.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2711,7 +2711,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2727,7 +2727,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/favicon.ico",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2748,7 +2748,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2772,7 +2772,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/favicon.ico",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2793,7 +2793,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2809,7 +2809,7 @@
     },
     {
       "Route": "GrammyAwards.bundle.scp.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/obj/Debug/net8.0/scopedcss/projectbundle/GrammyAwards.bundle.scp.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/obj/Debug/net8.0/scopedcss/projectbundle/GrammyAwards.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2830,7 +2830,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 05 Feb 2025 20:37:23 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2846,7 +2846,7 @@
     },
     {
       "Route": "GrammyAwards.nup8blukja.bundle.scp.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/obj/Debug/net8.0/scopedcss/projectbundle/GrammyAwards.bundle.scp.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/obj/Debug/net8.0/scopedcss/projectbundle/GrammyAwards.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2867,7 +2867,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 05 Feb 2025 20:37:23 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2891,7 +2891,7 @@
     },
     {
       "Route": "GrammyAwards.nup8blukja.styles.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/obj/Debug/net8.0/scopedcss/bundle/GrammyAwards.styles.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/obj/Debug/net8.0/scopedcss/bundle/GrammyAwards.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2912,7 +2912,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 05 Feb 2025 20:37:23 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2936,7 +2936,7 @@
     },
     {
       "Route": "GrammyAwards.styles.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/obj/Debug/net8.0/scopedcss/bundle/GrammyAwards.styles.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/obj/Debug/net8.0/scopedcss/bundle/GrammyAwards.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2957,7 +2957,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 05 Feb 2025 20:37:23 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5193,7 +5193,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/js/site.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/js/site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5214,7 +5214,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5230,7 +5230,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/js/site.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/js/site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5251,7 +5251,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5275,7 +5275,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5296,7 +5296,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5320,7 +5320,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5341,7 +5341,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5357,7 +5357,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.c2jlpeoesf.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5378,7 +5378,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5402,7 +5402,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5423,7 +5423,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5439,7 +5439,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5460,7 +5460,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5476,7 +5476,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.aexeepp0ev.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5497,7 +5497,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5521,7 +5521,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5542,7 +5542,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5558,7 +5558,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.erw9l3u2r3.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5579,7 +5579,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5603,7 +5603,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5624,7 +5624,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5640,7 +5640,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.ausgxo2sd3.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5661,7 +5661,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5685,7 +5685,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5706,7 +5706,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5722,7 +5722,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.d7shbmvgxk.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5743,7 +5743,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5767,7 +5767,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5788,7 +5788,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5804,7 +5804,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.cosvhxvwiu.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5825,7 +5825,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5849,7 +5849,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5870,7 +5870,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5886,7 +5886,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.k8d9w2qqmf.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5907,7 +5907,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5931,7 +5931,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5952,7 +5952,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5968,7 +5968,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.fvhpjtyr6v.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5989,7 +5989,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6013,7 +6013,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6034,7 +6034,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6050,7 +6050,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.b7pk76d08c.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6071,7 +6071,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6095,7 +6095,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6116,7 +6116,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6132,7 +6132,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.fsbi9cje9m.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6153,7 +6153,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6177,7 +6177,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6198,7 +6198,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6214,7 +6214,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6235,7 +6235,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6251,7 +6251,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.ee0r1s7dh0.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6272,7 +6272,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6296,7 +6296,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6317,7 +6317,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6333,7 +6333,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6354,7 +6354,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6370,7 +6370,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.jd9uben2k1.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6391,7 +6391,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6415,7 +6415,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6436,7 +6436,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6452,7 +6452,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.dxx9fxp4il.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6473,7 +6473,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6497,7 +6497,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.rzd6atqjts.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6518,7 +6518,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6542,7 +6542,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.ub07r2b239.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6563,7 +6563,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6587,7 +6587,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6608,7 +6608,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6624,7 +6624,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6645,7 +6645,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6661,7 +6661,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.r4e9w2rdcm.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6682,7 +6682,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6706,7 +6706,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.khv3u5hwcm.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6727,7 +6727,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6751,7 +6751,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6772,7 +6772,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6788,7 +6788,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.c2oey78nd0.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6809,7 +6809,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6833,7 +6833,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6854,7 +6854,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6870,7 +6870,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.lcd1t2u6c8.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6891,7 +6891,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6915,7 +6915,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6936,7 +6936,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6952,7 +6952,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.j5mq2jizvt.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6973,7 +6973,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6997,7 +6997,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7018,7 +7018,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7034,7 +7034,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.06098lyss8.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7055,7 +7055,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7079,7 +7079,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7100,7 +7100,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7116,7 +7116,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7137,7 +7137,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7153,7 +7153,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.nvvlpmu67g.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7174,7 +7174,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7198,7 +7198,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.tdbxkamptv.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7219,7 +7219,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7243,7 +7243,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7264,7 +7264,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7280,7 +7280,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7301,7 +7301,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7317,7 +7317,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.pj5nd1wqec.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7338,7 +7338,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7362,7 +7362,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7383,7 +7383,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7407,7 +7407,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7428,7 +7428,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7444,7 +7444,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7465,7 +7465,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7481,7 +7481,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.v0zj4ognzu.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7502,7 +7502,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7526,7 +7526,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.37tfw0ft22.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7547,7 +7547,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7571,7 +7571,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7592,7 +7592,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7608,7 +7608,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.hrwsygsryq.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7629,7 +7629,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7653,7 +7653,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7674,7 +7674,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7690,7 +7690,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7711,7 +7711,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7727,7 +7727,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.ft3s53vfgj.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7748,7 +7748,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7772,7 +7772,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7793,7 +7793,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7809,7 +7809,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.pk9g2wxc8p.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7830,7 +7830,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7854,7 +7854,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.s35ty4nyc5.css",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7875,7 +7875,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7899,7 +7899,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.6cfz1n2cew.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7920,7 +7920,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7944,7 +7944,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7965,7 +7965,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7981,7 +7981,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.6pdc2jztkx.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8002,7 +8002,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8026,7 +8026,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8047,7 +8047,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8063,7 +8063,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8084,7 +8084,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8108,7 +8108,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8129,7 +8129,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8145,7 +8145,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.iovd86k7lj.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8166,7 +8166,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8190,7 +8190,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8211,7 +8211,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8227,7 +8227,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8248,7 +8248,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8264,7 +8264,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.kbrnm935zg.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8285,7 +8285,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8309,7 +8309,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8330,7 +8330,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8346,7 +8346,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8367,7 +8367,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8391,7 +8391,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8412,7 +8412,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8428,7 +8428,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8449,7 +8449,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8465,7 +8465,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.y7v9cxd14o.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8486,7 +8486,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8510,7 +8510,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.vr1egmr9el.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8531,7 +8531,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8555,7 +8555,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8576,7 +8576,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8592,7 +8592,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.h1s4sie4z3.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8613,7 +8613,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8637,7 +8637,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8658,7 +8658,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8674,7 +8674,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8695,7 +8695,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8719,7 +8719,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8740,7 +8740,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8756,7 +8756,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.0j3bgjxly4.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8777,7 +8777,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8801,7 +8801,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8822,7 +8822,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8838,7 +8838,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.notf2xhcfb.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8859,7 +8859,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8883,7 +8883,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/LICENSE",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8904,7 +8904,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8920,7 +8920,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/bootstrap/LICENSE",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/bootstrap/LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8941,7 +8941,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8965,7 +8965,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8986,7 +8986,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9010,7 +9010,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9031,7 +9031,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9047,7 +9047,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9068,7 +9068,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9092,7 +9092,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9113,7 +9113,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9129,7 +9129,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9150,7 +9150,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9174,7 +9174,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9195,7 +9195,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9211,7 +9211,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.83jwlth58m.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9232,7 +9232,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9256,7 +9256,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9277,7 +9277,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9293,7 +9293,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9314,7 +9314,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9330,7 +9330,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.mrlpezrjn3.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9351,7 +9351,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9375,7 +9375,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9396,7 +9396,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9412,7 +9412,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.lzl9nlhx6b.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9433,7 +9433,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9457,7 +9457,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9478,7 +9478,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9502,7 +9502,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9523,7 +9523,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9539,7 +9539,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/LICENSE.md",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9560,7 +9560,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9576,7 +9576,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery-validation/LICENSE.md",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery-validation/LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9597,7 +9597,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9621,7 +9621,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.0i3buxo5is.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9642,7 +9642,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9666,7 +9666,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9687,7 +9687,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9703,7 +9703,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9724,7 +9724,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9740,7 +9740,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.min.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9761,7 +9761,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9777,7 +9777,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.o1o13a6vjx.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9798,7 +9798,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9822,7 +9822,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.ttgo8qnofa.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.min.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9843,7 +9843,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9867,7 +9867,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.2z0ns9nrw6.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9888,7 +9888,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9912,7 +9912,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9933,7 +9933,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9949,7 +9949,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.87fc7y1x7t.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9970,7 +9970,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9994,7 +9994,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10015,7 +10015,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10031,7 +10031,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.map",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10052,7 +10052,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10068,7 +10068,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.muycvpuwrr.js",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/dist/jquery.slim.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10089,7 +10089,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10113,7 +10113,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/LICENSE.txt",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10134,7 +10134,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10158,7 +10158,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "/Users/Audrey/Desktop/Desktop/C# Grammy/GrammyAwards/wwwroot/lib/jquery/LICENSE.txt",
+      "AssetFile": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/wwwroot/lib/jquery/LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10179,7 +10179,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 03:26:06 GMT"
+          "Value": "Sat, 22 Feb 2025 03:29:14 GMT"
         },
         {
           "Name": "Cache-Control",

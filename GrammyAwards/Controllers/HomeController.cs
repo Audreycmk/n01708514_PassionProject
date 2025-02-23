@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using GrammyAwards.Models;
+using GrammyAwards.Models.ViewModels;
 
 namespace GrammyAwards.Controllers;
 

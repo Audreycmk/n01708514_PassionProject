@@ -1,165 +1,147 @@
-using GrammyAwards.Data;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using GrammyAwards.Interfaces;
 using GrammyAwards.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-[Route("api/[controller]")] // Base route for the controller
-[ApiController] // Indicates that this is an API controller
-public class SongArtistController : ControllerBase
+namespace GrammyAwards.Controllers
 {
-    private readonly ApplicationDbContext _context; // Injected DbContext to interact with the database
-
-    // Constructor to inject the DbContext
-    public SongArtistController(ApplicationDbContext context)
+    [Route("api/[controller]")]
+    [ApiController]
+    public class SongArtistController : ControllerBase
     {
-        _context = context;
-    }
+        private readonly ISongArtistService _songArtistService;
 
-    /// <summary>
-    /// Returns a list of song-artist relationships in the system.
-    /// </summary>
-    /// <example>
-    /// GET api/SongArtist/Get -> [{"songArtistId":1, "songId":1, "artistId":1, "role":" Primary Artist"}]
-    /// </example>
-    /// <returns>
-    /// A list of SongArtistDto objects.
-    /// </returns>
-    [HttpGet(template:"Get")]
-    public async Task<ActionResult<IEnumerable<SongArtistDto>>> GetSongArtists()
-    {
-        var songArtists = await _context.SongArtists
-            .Select(sa => new SongArtistDto
+        public SongArtistController(ISongArtistService songArtistService)
+        {
+            _songArtistService = songArtistService;
+        }
+
+        /// <summary>
+        /// Returns a list of songs by a specific artist.
+        /// </summary>
+        /// <param name="artistId">The artist ID</param>
+        /// <returns>A list of songs associated with the artist.</returns>
+        [HttpGet("GetSongsByArtist/{artistId}")]
+        public async Task<ActionResult<IEnumerable<SongDto>>> GetSongsByArtist(int artistId)
+        {
+            var songs = await _songArtistService.GetSongsByArtist(artistId);
+
+            if (songs == null)
             {
-                SongArtistId = sa.SongArtistId,
-                SongId = sa.SongId,
-                ArtistId = sa.ArtistId,
-                Role = sa.Role
-            })
-            .ToListAsync();
+                return NotFound();
+            }
 
-        return Ok(songArtists);
-    }
+            return Ok(songs);
+        }
 
-    /// <summary>
-    /// Retrieves a specific song-artist relationship by ID.
-    /// </summary>
-    /// <example>
-    /// GET api/SongArtist/Find/1 -> {"songArtistId":1, "songId":1, "artistId":1, "role": "Primary Artist"}
-    /// </example>
-    /// <returns>
-    /// The song-artist object if found, otherwise NotFound.
-    /// </returns>
-    [HttpGet("Find/{id}")]
-    public async Task<ActionResult<SongArtistDto>> GetSongArtist(int id)
-    {
-        var songArtist = await _context.SongArtists
-            .Where(sa => sa.SongArtistId == id)
-            .Select(sa => new SongArtistDto
+        /// <summary>
+        /// Returns a list of artists associated with a specific song.
+        /// </summary>
+        /// <param name="songId">The song ID</param>
+        /// <returns>A list of artists who performed on the song.</returns>
+        [HttpGet("GetArtistsBySong/{songId}")]
+        public async Task<ActionResult<IEnumerable<ArtistDto>>> GetArtistsBySong(int songId)
+        {
+            var artists = await _songArtistService.GetArtistsBySong(songId);
+
+            if (artists == null)
             {
-                SongArtistId = sa.SongArtistId,
-                SongId = sa.SongId,
-                ArtistId = sa.ArtistId,
-                Role = sa.Role
-            })
-            .FirstOrDefaultAsync();
+                return NotFound();
+            }
 
-        if (songArtist == null)
-        {
-            return NotFound();
+            return Ok(artists);
         }
 
-        return Ok(songArtist);
-    }
-
-     /// <summary>
-    /// Adds a new song-artist relationship to the system.
-    /// </summary>
-    /// <example>
-    /// POST api/SongArtist/Add 
-    /// Body: {"songId":2, "artistId":2, "role":"Producer"}
-    /// </example>
-    /// <returns>
-    /// The created SongArtistDto object with its assigned ID.
-    /// </returns>
-    [HttpPost("Add")]
-    public async Task<ActionResult<SongArtistDto>> CreateSongArtist(SongArtistDto songArtistDto)
-    {
-        var songArtist = new SongArtist
+        /// <summary>
+        /// Adds a new song-artist relationship.
+        /// </summary>
+        /// <param name="songArtistDto">The song-artist DTO</param>
+        /// <returns>The created song-artist DTO</returns>
+        [HttpPost("Add")]
+        public async Task<ActionResult<SongArtistDto>> AddSongArtist(SongArtistDto songArtistDto)
         {
-            SongId = songArtistDto.SongId,
-            ArtistId = songArtistDto.ArtistId,
-            Role = songArtistDto.Role
-        };
+            var response = await _songArtistService.AddSongArtist(songArtistDto);
 
-        _context.SongArtists.Add(songArtist);
-        await _context.SaveChangesAsync(); // Save to database
+            // If an error occurred, return a conflict response
+            if (response.Status == ServiceResponse.ServiceStatus.Error)
+            {
+                return Conflict(response.Messages);
+            }
 
-        var createdDto = new SongArtistDto
-        {
-            SongArtistId = songArtist.SongArtistId,
-            SongId = songArtist.SongId,
-            ArtistId = songArtist.ArtistId,
-            Role = songArtist.Role
-        };
-
-        return CreatedAtAction(nameof(GetSongArtist), new { id = songArtist.SongArtistId }, createdDto);
-    }
-
-    /// <summary>
-    /// Updates an existing song-artist relationship in the system.
-    /// </summary>
-    /// <example>
-    /// PUT api/SongArtist/Put/1 
-    /// Body: {"songArtistId":3, "songId":1, "artistId":1, "role":"Featured Artist"}
-    /// </example>
-    /// <returns>
-    /// NoContent if successful, otherwise an error response.
-    /// </returns>
-    [HttpPut("Put/{id}")]
-    public async Task<IActionResult> UpdateSongArtist(int id, SongArtistDto songArtistDto)
-    {
-        if (id != songArtistDto.SongArtistId)
-        {
-            return BadRequest(); // ID mismatch
+            // Return the newly created SongArtistDto if successful
+            return CreatedAtAction(nameof(AddSongArtist), new { id = response.CreatedId }, songArtistDto);
         }
 
-        var existingSongArtist = await _context.SongArtists.FindAsync(id);
-        if (existingSongArtist == null)
+        /// <summary>
+        /// Updates an existing song-artist relationship.
+        /// </summary>
+        /// <param name="id">The ID of the song-artist relationship to update</param>
+        /// <param name="songArtistDto">The updated song-artist DTO</param>
+        /// <returns>No content if successful</returns>
+        [HttpPut("Update/{id}")]
+        public async Task<ActionResult> UpdateSongArtist(int id, SongArtistDto songArtistDto)
         {
-            return NotFound(); // Return 404 if not found
+            if (id != songArtistDto.SongArtistId)
+            {
+                return BadRequest("ID mismatch.");
+            }
+
+            var response = await _songArtistService.UpdateSongArtist(id, songArtistDto);
+
+            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
+            {
+                return NotFound();
+            }
+
+            if (response.Status == ServiceResponse.ServiceStatus.Error)
+            {
+                return Conflict(response.Messages);
+            }
+
+            return NoContent();
         }
 
-        existingSongArtist.SongId = songArtistDto.SongId;
-        existingSongArtist.ArtistId = songArtistDto.ArtistId;
-        existingSongArtist.Role = songArtistDto.Role;
-
-        _context.Entry(existingSongArtist).State = EntityState.Modified;
-        await _context.SaveChangesAsync();
-
-        return NoContent(); // Return 204 on success
-    }
-
-    /// <summary>
-    /// Deletes a song-artist relationship from the system by ID.
-    /// </summary>
-    /// <example>
-    /// DELETE api/SongArtist/Delete/1
-    /// </example>
-    /// <returns>
-    /// NoContent if successful, otherwise NotFound.
-    /// </returns>
-    [HttpDelete("Delete/{id}")]
-    public async Task<IActionResult> DeleteSongArtist(int id)
-    {
-        var songArtist = await _context.SongArtists.FindAsync(id);
-        if (songArtist == null)
+        [HttpDelete("UnlinkArtistFromSong/{artistId}/{songId}")]
+        public async Task<ActionResult<ServiceResponse>> UnlinkArtistFromSong(int artistId, int songId)
         {
-            return NotFound();
+            var response = await _songArtistService.UnlinkArtistFromSong(artistId, songId);
+
+            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
+            {
+                return NotFound(response); // 404 Not Found
+            }
+
+            if (response.Status == ServiceResponse.ServiceStatus.Error)
+            {
+                return BadRequest(response); // 400 Bad Request if there was an error
+            }
+
+            return Ok(response); // 200 OK if the unlink was successful
         }
 
-        _context.SongArtists.Remove(songArtist);
-        await _context.SaveChangesAsync();
 
-        return NoContent();
+        /// <summary>
+        /// Deletes a song-artist relationship.
+        /// </summary>
+        /// <param name="id">The ID of the song-artist relationship to delete</param>
+        /// <returns>No content if successful</returns>
+        [HttpDelete("Delete/{id}")]
+        public async Task<ActionResult> DeleteSongArtist(int id)
+        {
+            var response = await _songArtistService.DeleteSongArtist(id);
+
+            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
+            {
+                return NotFound();
+            }
+
+            if (response.Status == ServiceResponse.ServiceStatus.Error)
+            {
+                return Conflict(response.Messages);
+            }
+
+            return NoContent();
+        }
     }
 }
