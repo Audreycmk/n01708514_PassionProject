@@ -53,8 +53,8 @@ public async Task<IActionResult> Details(int id)
         // Create the view model to pass to the view
         SongDetails songInfo = new SongDetails()
         {
-            Song = songDto,               // SongDto passed to Song property
-            SongAwards = songAwards       // List of awards associated with the song
+            Song = songDto,               // SongDto passed to 
+            SongAwards = songAwards       // List of awards 
         };
 
         return View(songInfo); // Return the view with the song details
@@ -72,20 +72,17 @@ public async Task<IActionResult> Details(int id)
 
     // Create New Song
     [HttpPost]
-    public async Task<IActionResult> New(SongDto songDto)
-    {
-        if (ModelState.IsValid)
-        {
-            var response = await _songService.AddSong(songDto);
+    public async Task<IActionResult> Add(SongDto songDto)
+      {
+            ServiceResponse response = await _songService.AddSong(songDto);
+
             if (response.Status == ServiceResponse.ServiceStatus.Created)
             {
-                return RedirectToAction("List");
+                return RedirectToAction("Details", "SongPage", new { id = response.CreatedId });
             }
-            // Handle errors (maybe show a message in the view)
-            return View("Error", response.Messages);
+
+            return View("Error", new ErrorViewModel { Errors = response.Messages });
         }
-        return View(songDto);
-    }
 
     // Edit Song Page
     [HttpGet]
@@ -101,19 +98,22 @@ public async Task<IActionResult> Details(int id)
 
     // Update Song Details
     [HttpPost]
-    public async Task<IActionResult> Edit(int id, SongDto songDto)
+    public async Task<IActionResult> Update(int id, SongDto songDto)
     {
-        if (ModelState.IsValid)
-        {
-            var response = await _songService.UpdateSong(id, songDto);
-            if (response.Status == ServiceResponse.ServiceStatus.Updated)
-            {
-                return RedirectToAction("List");
-            }
-            return View("Error", response.Messages);
-        }
-        return View(songDto);
+    // Update artist with the service
+    ServiceResponse response = await _songService.UpdateSong(id, songDto);
+
+    // Check if the update was successful
+    if (response.Status == ServiceResponse.ServiceStatus.Updated)
+    {
+        // Redirect to the Details page with the updated artist ID
+       return RedirectToAction("Details", "SongPage", new { id = songDto.SongId }); // Make sure you're passing the correct artist ID
     }
+
+    // If something went wrong, return the error view
+    return View("Error", new ErrorViewModel { Errors = response.Messages });
+}
+
 
     // Confirm Delete Page
 [HttpGet]

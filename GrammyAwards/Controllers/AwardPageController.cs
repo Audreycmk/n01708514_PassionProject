@@ -61,10 +61,8 @@ public async Task<IActionResult> Details(int id)
 }
 
 
-
-
-
         // GET: AwardPage/New
+         [HttpGet]
         public IActionResult New()
         {
             return View();

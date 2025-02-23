@@ -89,40 +89,37 @@ namespace GrammyAwards.Services
         return response;
     }
 
-    public async Task<ServiceResponse> AddSong(SongDto songDto)
-    {
-        var response = new ServiceResponse();
-
-        if (string.IsNullOrWhiteSpace(songDto.SongName))
+    
+ public async Task<ServiceResponse> AddSong(SongDto songDto)
         {
-            response.Status = ServiceResponse.ServiceStatus.Error;
-            response.Messages.Add("Song name is required.");
+            var response = new ServiceResponse<SongDto>();
+
+            var song = new Song
+            {
+                SongName = songDto.SongName,
+                Album = songDto.Album,
+                ReleaseYear = songDto.ReleaseYear
+            };
+
+            try
+            {
+                _context.Songs.Add(song);
+                await _context.SaveChangesAsync();
+                response.Status = ServiceResponse.ServiceStatus.Created;
+                response.CreatedId = song.SongId;
+                response.Data = songDto;
+            }
+            catch (Exception ex)
+            {
+                response.Status = ServiceResponse.ServiceStatus.Error;
+                response.Messages.Add("Error adding award.");
+                response.Messages.Add(ex.Message);
+            }
+
             return response;
         }
 
-        var song = new Song
-        {
-            SongName = songDto.SongName,
-            Album = songDto.Album,
-            ReleaseYear = songDto.ReleaseYear
-        };
 
-        try
-        {
-            _context.Songs.Add(song);
-            await _context.SaveChangesAsync();
-            response.Status = ServiceResponse.ServiceStatus.Created;
-            response.CreatedId = song.SongId;
-        }
-        catch (Exception ex)
-        {
-            response.Status = ServiceResponse.ServiceStatus.Error;
-            response.Messages.Add("There was an error adding the song.");
-            response.Messages.Add(ex.Message);
-        }
-
-        return response;
-    }
 
     public async Task<ServiceResponse> DeleteSong(int id)
     {
