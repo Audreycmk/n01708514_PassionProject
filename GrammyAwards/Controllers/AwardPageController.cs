@@ -166,5 +166,33 @@ public async Task<IActionResult> Update(AwardDto awardDto)
             }
             return View("Error", response.Messages);
         }
+    
+[HttpGet]
+public IActionResult ConfirmDelete(int id)
+{
+    // You can fetch the award data here to display it in the confirmation page if necessary.
+    AwardDto award = _awardService.GetAwardById(id).Result; // Replace with an appropriate method to get award data
+    if (award == null)
+    {
+        return View("Error", new ErrorViewModel { Errors = new List<string> { "Award not found." } });
+    }
+    return View(award); // Return a view to confirm deletion (pass the award data if needed)
+}
+    // Delete Award
+[HttpPost]
+public async Task<IActionResult> Delete(int id)
+{
+    ServiceResponse response = await _awardService.DeleteAward(id);
+
+    if (response.Status == ServiceResponse.ServiceStatus.Deleted)
+    {
+        return RedirectToAction("List", "AwardPage"); // Redirect to the list page after successful deletion
+    }
+
+    return View("Error", new ErrorViewModel { Errors = response.Messages }); // Show an error view if deletion fails
+}
+
+
+
     }
 }

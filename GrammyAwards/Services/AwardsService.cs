@@ -112,11 +112,11 @@ namespace GrammyAwards.Services
 }
 
 
-        public async Task<ServiceResponse> DeleteAward(int awardId)
+        public async Task<ServiceResponse> DeleteAward(int id)
         {
             var response = new ServiceResponse();
 
-            var award = await _context.Awards.FindAsync(awardId);
+            var award = await _context.Awards.FindAsync(id);
             if (award == null)
             {
                 response.Status = ServiceResponse.ServiceStatus.NotFound;
@@ -130,11 +130,11 @@ namespace GrammyAwards.Services
                 await _context.SaveChangesAsync();
                 response.Status = ServiceResponse.ServiceStatus.Deleted;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 response.Status = ServiceResponse.ServiceStatus.Error;
                 response.Messages.Add("Error deleting award.");
-                response.Messages.Add(ex.Message);
+             
             }
 
             return response;
