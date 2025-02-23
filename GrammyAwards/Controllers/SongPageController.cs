@@ -11,10 +11,14 @@ namespace GrammyAwards.Controllers
     public class SongPageController : Controller
 {
     private readonly ISongService _songService;
+    private readonly IAwardService _awardService;
+    private readonly ISongAwardService _songAwardService;
 
-    public SongPageController(ISongService songService)
+    public SongPageController(ISongService songService, IAwardService awardService, ISongAwardService songAwardService)
     {
         _songService = songService;
+        _awardService = awardService;
+        _songAwardService = songAwardService;
     }
 
      // Redirect to List view by default
@@ -29,6 +33,35 @@ namespace GrammyAwards.Controllers
         IEnumerable<SongDto> songDtos = await _songService.List();
         return View(songDtos);
     }   
+
+[HttpGet]
+public async Task<IActionResult> Details(int id)
+{
+    // Fetch the song details
+    SongDto? songDto = await _songService.FindSong(id);
+
+    // Explicitly fetch awards associated with the song
+    var songAwards = await _songAwardService.GetAwardsBySong(id);
+
+    // If song not found, return an error view
+    if (songDto == null)
+    {
+        return View("Error", new ErrorViewModel() { Errors = new List<string> { "Could not find song" } });
+    }
+    else
+    {
+        // Create the view model to pass to the view
+        SongDetails songInfo = new SongDetails()
+        {
+            Song = songDto,               // SongDto passed to Song property
+            SongAwards = songAwards       // List of awards associated with the song
+        };
+
+        return View(songInfo); // Return the view with the song details
+    }
+}
+
+
 
     // New Song Page
     [HttpGet]
@@ -83,7 +116,7 @@ namespace GrammyAwards.Controllers
     }
 
     // Confirm Delete Page
-    [HttpGet]
+[HttpGet]
     public async Task<IActionResult> ConfirmDelete(int id)
     {
         var songDto = await _songService.FindSong(id);

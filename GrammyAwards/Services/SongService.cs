@@ -34,16 +34,22 @@ namespace GrammyAwards.Services
 
     public async Task<SongDto?> FindSong(int id)
     {
-        return await _context.Songs
-            .Where(s => s.SongId == id)
-            .Select(song => new SongDto
+        var song = await _context.Songs.FirstOrDefaultAsync(e => e.SongId == id);
+
+    // Return null if the song is not found
+    if (song == null)
+    {
+        return null;
+    }
+
+    // Return the song details as SongDto
+    return new SongDto
             {
                 SongId = song.SongId,
                 SongName = song.SongName,
                 Album = song.Album,
                 ReleaseYear = song.ReleaseYear
-            })
-            .FirstOrDefaultAsync();
+            };
     }
 
     public async Task<ServiceResponse> UpdateSong(int id, SongDto songDto)
