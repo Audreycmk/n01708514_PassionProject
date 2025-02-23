@@ -50,16 +50,23 @@
     {
         <p>No songs are associated with this award.</p>
     }
+
     <div class="mt-4">
-      <button type="button" class="btn btn-secondary" disabled>Add Song</button>  
+        <button type="button" class="btn btn-secondary" disabled>Add Song</button>  
     </div>
     <div class="mt-4">
         <a class="btn btn-primary" href="@Url.Action("Edit", "AwardPage", new { id = Model.Award.AwardId })">Edit</a>
         <a class="btn btn-danger" href="@Url.Action("ConfirmDelete", "AwardPage", new { id = Model.Award.AwardId })">Delete</a>
         <a class="btn btn-secondary" href="@Url.Action("List", "AwardPage")">Back to Award List</a>
     </div>
-</div>
 
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}
+    <!-- Error handling for missing award data -->
+    @if (Model.Award == null)
+    {
+        <div class="alert alert-danger mt-4" role="alert">
+            <h4>Error</h4>
+            <p>Award data is not available.</p>
+            <a class="btn btn-secondary" href="@Url.Action("List", "AwardPage")">Back to List</a>
+        </div>
+    }
+</div>

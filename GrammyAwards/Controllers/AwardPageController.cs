@@ -9,12 +9,14 @@ namespace GrammyAwards.Controllers
     public class AwardPageController : Controller
     {
         private readonly IAwardService _awardService;
+        private readonly ISongService _songService;
         private readonly ISongAwardService _songAwardService;
 
-        public AwardPageController(IAwardService awardService, ISongAwardService songAwardService)
+        public AwardPageController(IAwardService awardService, ISongAwardService songAwardService, ISongService songService)
         {
             _awardService = awardService;
             _songAwardService = songAwardService;
+            _songService = songService;
         }
 
        // Redirect to List view by default
@@ -31,26 +33,34 @@ namespace GrammyAwards.Controllers
             return View(artistDtos);
         }
 
-    
-    [HttpGet]
+  [HttpGet]
 public async Task<IActionResult> Details(int id)
 {
-    // Get the award DTO from the service
-    AwardDto awardDto = await _awardService.GetAwardById(id);
+    // Fetch the award details
+    AwardDto? awardDto = await _awardService.GetAwardById(id);
+    
+    // CHANGE => Explicitly fetch songs by award
+    var awardAndStatus = await _songAwardService.GetSongsByAward(id);
+    
+    // If award not found, return an error view
     if (awardDto == null)
     {
-        return NotFound();
+        return View("Error", new ErrorViewModel() { Errors = new List<string> { "Could not find award" } });
     }
-
-    // Map the AwardDto to an AwardDetails view model
-    var awardDetails = new AwardDetails
+    else
     {
-        Award = awardDto,
-        AwardSongs = await _songAwardService.GetSongsByAward(awardDto.AwardId)
-    };
+        // Create the view model to pass to the view
+        AwardDetails awardInfo = new AwardDetails()
+        {
+            Award = awardDto,               // AwardDto passed to Award property
+            AwardSongs = awardAndStatus     // List of songs associated with the award
+        };
 
-    return View(awardDetails);
+        return View(awardInfo); // Return the view with the award details
+    }
 }
+
+
 
 
 
@@ -93,32 +103,32 @@ public async Task<IActionResult> Details(int id)
                 Description = award.Description
             };
 
-            return View(awardDto);  // Make sure you're passing the correct artistDto
+            return View(awardDto);  // Make sure you're passing the correct artistDto 
         }
 
+[HttpPost]
+public async Task<IActionResult> Update(AwardDto awardDto)
+{
+    if (ModelState.IsValid)
+    {
+        var response = await _awardService.UpdateAward(awardDto.AwardId, awardDto);
 
-        // GET: AwardPage/Delete/1
-        public async Task<IActionResult> ConfirmDelete(int id)
+        if (response.Status == ServiceResponse.ServiceStatus.Updated)
         {
-            var awardDto = await _awardService.GetAwardById(id);
-            if (awardDto == null)
-            {
-                return NotFound();
-            }
-            return View(awardDto);
+            //This is the redirect to the details page
+            return RedirectToAction("Details", new { id = awardDto.AwardId });
         }
-
-        // POST: AwardPage/Delete/1
-        [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        else
         {
-            var response = await _awardService.DeleteAward(id);
-            if (response.Status == ServiceResponse.ServiceStatus.Deleted)
-            {
-                return RedirectToAction("Index");
-            }
-            return View("Error", response.Messages);
+            ModelState.AddModelError("", "There was an error updating the award.");
         }
+    }
+
+    // If validation failed, return to the edit page
+    return View(awardDto);
+}
+
+
 
         // Get all SongAwards for an award
         public async Task<IActionResult> SongAwards(int awardId)

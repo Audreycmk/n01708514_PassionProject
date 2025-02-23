@@ -30,20 +30,26 @@ namespace GrammyAwards.Services
             return awards;
         }
 
-        public async Task<AwardDto> GetAwardById(int id)
-        {
-            var award = await _context.Awards
-                .Where(a => a.AwardId == id)
-                .Select(a => new AwardDto
-                {
-                    AwardId = a.AwardId,
-                    AwardName = a.AwardName,
-                    Description = a.Description
-                })
-                .FirstOrDefaultAsync();
+     public async Task<AwardDto> GetAwardById(int id)
+{
+    // Fetch the award by its ID
+    var award = await _context.Awards.FirstOrDefaultAsync(e => e.AwardId == id);
 
-            return award;
-        }
+    // Return null if the award is not found
+    if (award == null)
+    {
+        return null;
+    }
+
+    // Return the award details as AwardDto
+    return new AwardDto
+    {
+        AwardId = award.AwardId,
+        AwardName = award.AwardName,
+        Description = award.Description
+    };
+}
+
 
         public async Task<ServiceResponse<AwardDto>> AddAward(AwardDto awardDto)
         {
@@ -74,34 +80,37 @@ namespace GrammyAwards.Services
         }
 
         public async Task<ServiceResponse> UpdateAward(int awardId, AwardDto awardDto)
-        {
-            var response = new ServiceResponse();
+{
+    var response = new ServiceResponse();
 
-            var award = await _context.Awards.FindAsync(awardId);
-            if (award == null)
-            {
-                response.Status = ServiceResponse.ServiceStatus.NotFound;
-                response.Messages.Add("Award not found.");
-                return response;
-            }
+    // Find the existing award by ID
+    var award = await _context.Awards.FindAsync(awardId);
+    if (award == null)
+    {
+        response.Status = ServiceResponse.ServiceStatus.NotFound;
+        response.Messages.Add("Award not found.");
+        return response;
+    }
 
-            award.AwardName = awardDto.AwardName;
-            award.Description = awardDto.Description;
+    // Update award properties
+    award.AwardName = awardDto.AwardName;
+    award.Description = awardDto.Description;
 
-            try
-            {
-                await _context.SaveChangesAsync();
-                response.Status = ServiceResponse.ServiceStatus.Updated;
-            }
-            catch (Exception ex)
-            {
-                response.Status = ServiceResponse.ServiceStatus.Error;
-                response.Messages.Add("Error updating award.");
-                response.Messages.Add(ex.Message);
-            }
+    try
+    {
+        await _context.SaveChangesAsync();
+        response.Status = ServiceResponse.ServiceStatus.Updated;
+        response.CreatedId = award.AwardId;
+    }
+    catch (Exception ex)
+    {
+        response.Status = ServiceResponse.ServiceStatus.Error;
+        response.Messages.Add($"Error updating award: {ex.Message}");
+    }
 
-            return response;
-        }
+    return response;
+}
+
 
         public async Task<ServiceResponse> DeleteAward(int awardId)
         {

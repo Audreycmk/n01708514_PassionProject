@@ -10,6 +10,6 @@ namespace GrammyAwards.Models.ViewModels
 
         // If you want to display a list of songs associated with the award,
         // use the type returned by your SongAwardService. For example:
-        public IEnumerable<GetSongAwardDto> AwardSongs { get; set; } = new List<GetSongAwardDto>();
+        public IEnumerable<GetSongAwardDto> AwardSongs { get; set; }
     }
 }

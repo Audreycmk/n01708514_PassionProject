@@ -7,14 +7,6 @@
 <div class="container mt-5">
     <h1 class="mb-4">Artist Details</h1>
 
-    <!-- Success Message Section -->
-    @if (TempData["SuccessMessage"] != null)
-    {
-        <div class="alert alert-success" role="alert">
-            @TempData["SuccessMessage"]
-        </div>
-    }
-
     @if (Model?.Artist != null)
     {
         <!-- Artist Information Section -->

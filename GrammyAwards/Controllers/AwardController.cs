@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using GrammyAwards.Interfaces;
+using GrammyAwards.Data; // Ensure the correct namespace for ApplicationDbContext
 using GrammyAwards.Models;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace GrammyAwards.Controllers
@@ -10,74 +11,117 @@ namespace GrammyAwards.Controllers
     [ApiController]
     public class AwardController : ControllerBase
     {
-        private readonly IAwardService _awardService;
+        private readonly ApplicationDbContext _context;
 
-        public AwardController(IAwardService awardService)
+        // Inject ApplicationDbContext into the controller
+        public AwardController(ApplicationDbContext context)
         {
-            _awardService = awardService;
+            _context = context;
         }
 
+        /// <summary>
+        /// Retrieves a list of all awards.
+        /// </summary>
         [HttpGet("Get")]
-        public async Task<ActionResult<IEnumerable<AwardDto>>> List()
+        public ActionResult<IEnumerable<AwardDto>> List()
         {
-            var awards = await _awardService.List();
+            var awards = _context.Awards
+                .Select(a => new AwardDto
+                {
+                    AwardId = a.AwardId,
+                    AwardName = a.AwardName,
+                    Description = a.Description
+                })
+                .ToList();
+
             return Ok(awards);
         }
 
+        /// <summary>
+        /// Retrieves a specific award by ID.
+        /// </summary>
         [HttpGet("Find/{id}")]
-        public async Task<ActionResult<AwardDto>> GetAwardById(int awardId)
+        public async Task<ActionResult<AwardDto>> GetAwardById(int id)
         {
-            var award = await _awardService.GetAwardById(awardId);
+            var award = await _context.Awards.FindAsync(id);
             if (award == null)
             {
                 return NotFound();
             }
-            return Ok(award);
+
+            return Ok(new AwardDto
+            {
+                AwardId = award.AwardId,
+                AwardName = award.AwardName,
+                Description = award.Description
+            });
         }
 
+        /// <summary>
+        /// Adds a new award to the database.
+        /// </summary>
         [HttpPost("Add")]
         public async Task<ActionResult<AwardDto>> AddAward(AwardDto awardDto)
         {
-            var response = await _awardService.AddAward(awardDto);
-            if (response.Status == ServiceResponse.ServiceStatus.Error)
+            var award = new Award
             {
-                return Conflict(response.Messages);
-            }
-            return CreatedAtAction(nameof(GetAwardById), new { awardId = response.CreatedId }, awardDto);
+                AwardName = awardDto.AwardName,
+                Description = awardDto.Description
+            };
+
+            _context.Awards.Add(award);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetAwardById), new { id = award.AwardId }, new AwardDto
+            {
+                AwardId = award.AwardId,
+                AwardName = award.AwardName,
+                Description = award.Description
+            });
         }
 
+        /// <summary>
+        /// Updates an existing award.
+        /// </summary>
         [HttpPut("Update/{id}")]
-        public async Task<ActionResult> UpdateAward(int awardId, AwardDto awardDto)
+        public async Task<IActionResult> UpdateAward(int id, AwardDto awardDto)
         {
-            if (awardId != awardDto.AwardId)
-            {
-                return BadRequest("ID mismatch.");
-            }
-
-            var response = await _awardService.UpdateAward(awardId, awardDto);
-            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
+            var award = await _context.Awards.FindAsync(id);
+            if (award == null)
             {
                 return NotFound();
             }
-            if (response.Status == ServiceResponse.ServiceStatus.Error)
+
+            // Update award properties
+            award.AwardName = awardDto.AwardName;
+            award.Description = awardDto.Description;
+
+            try
             {
-                return Conflict(response.Messages);
+                await _context.SaveChangesAsync();
+                return NoContent();
             }
-            return NoContent();
+            catch (Exception)
+            {
+                return StatusCode(500, "Error updating award.");
+            }
         }
 
+        /// <summary>
+        /// Deletes an award by ID.
+        /// </summary>
         [HttpDelete("Delete/{id}")]
-        public async Task<ActionResult> DeleteAward(int awardId)
+        public async Task<IActionResult> DeleteAward(int id)
         {
-            var response = await _awardService.DeleteAward(awardId);
-            if (response.Status == ServiceResponse.ServiceStatus.NotFound)
+            var award = await _context.Awards.FindAsync(id);
+            if (award == null)
             {
                 return NotFound();
             }
-            if (response.Status == ServiceResponse.ServiceStatus.Error)
-            {
-                return Conflict(response.Messages);
-            }
+
+            _context.Awards.Remove(award);
+            await _context.SaveChangesAsync();
+
             return NoContent();
         }
     }
