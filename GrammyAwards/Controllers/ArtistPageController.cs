@@ -77,29 +77,45 @@ namespace GrammyAwards.Controllers
 
     public async Task<IActionResult> Edit(int id)
 {
-    var artist = await _artistService.FindArtist(id); // Fetch the artist from the service
-
+    var artist = await _artistService.FindArtist(id);
+    
     if (artist == null)
     {
-        return NotFound(); // Handle case when the artist is not found
+        return NotFound();
     }
 
-    return View(artist); // Return the artist to the Edit view
+    var artistDto = new ArtistDto
+    {
+        ArtistId = artist.ArtistId,
+        ArtistName = artist.ArtistName,
+        Nationality = artist.Nationality
+    };
+
+    return View(artistDto);  // Make sure you're passing the correct artistDto
 }
 
 
 [HttpPost]
-        public async Task<IActionResult> Update(int id, ArtistDto artistDto)
-        {
-            ServiceResponse response = await _artistService.UpdateArtist(id, artistDto);
+public async Task<IActionResult> Update(int id, ArtistDto artistDto)
+{
+    // Update artist with the service
+    ServiceResponse response = await _artistService.UpdateArtist(id, artistDto);
 
-            if (response.Status == ServiceResponse.ServiceStatus.Created)
-            {
-                return RedirectToAction("Details", "ArtistPage", new { id = response.CreatedId });
-            }
+    // Check if the update was successful
+    if (response.Status == ServiceResponse.ServiceStatus.Updated)
+    {
+        // Redirect to the Details page with the updated artist ID
+        return RedirectToAction("Details", "ArtistPage", new { id = id });
+    }
 
-            return View("Error", new ErrorViewModel { Errors = response.Messages });
-        }
+    // If something went wrong, return the error view
+    return View("Error", new ErrorViewModel { Errors = response.Messages });
+}
+
+
+
+
+
 
         // View for confirming artist deletion
         [HttpGet]

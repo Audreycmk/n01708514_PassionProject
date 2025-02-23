@@ -1,17 +1,17 @@
 @model GrammyAwards.Models.ArtistDto
 
-
 @{
     ViewData["Title"] = "Edit Artist";
 }
 
-<div class="container">
-    <h1>Edit Artist</h1>
+<h1>Edit Artist</h1>
 
-    @if (Model != null)
-    {
-        <form asp-action="Update" asp-controller="ArtistPage" method="post">
-            <!-- Hidden field for ArtistId -->
+<h4>Artist Details</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Update" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ArtistId" />
 
             <div class="form-group">
@@ -32,22 +32,14 @@
                 <span asp-validation-for="Nationality" class="text-danger"></span>
             </div>
 
-            <div class="form-group mt-3">
+           <div class="form-group mt-3">
                 <input type="submit" value="Save Changes" class="btn btn-primary" />
                 <a asp-action="Details" asp-controller="ArtistPage" asp-route-id="@Model.ArtistId" class="btn btn-secondary">Cancel</a>
-            </div>
+         </div>
         </form>
-    }
-    else
-    {
-        <div class="alert alert-danger" role="alert">
-            <h4>Error</h4>
-            <p>Artist data is not available.</p>
-            <a asp-action="List" asp-controller="ArtistPage" class="btn btn-secondary">Back to List</a>
-        </div>
-    }
+    </div>
 </div>
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

@@ -80,7 +80,7 @@ namespace GrammyAwards.Services
             {
                 await _context.SaveChangesAsync();
                 response.Status = ServiceResponse.ServiceStatus.Updated;
-                response.Messages.Add("Artist updated successfully.");
+                response.CreatedId = artist.ArtistId;
             }
             catch (Exception ex)
             {
