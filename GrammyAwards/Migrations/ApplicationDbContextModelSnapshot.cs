@@ -99,12 +99,20 @@ namespace GrammyAwards.Migrations
                     b.Property<int>("ArtistId")
                         .HasColumnType("int");
 
+                    b.Property<string>("ArtistName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("SongId")
                         .HasColumnType("int");
+
+                    b.Property<string>("SongName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.HasKey("SongArtistId");
 
@@ -125,6 +133,10 @@ namespace GrammyAwards.Migrations
 
                     b.Property<int>("AwardId")
                         .HasColumnType("int");
+
+                    b.Property<string>("AwardName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("AwardStatus")
                         .IsRequired()
@@ -347,7 +359,7 @@ namespace GrammyAwards.Migrations
                         .IsRequired();
 
                     b.HasOne("GrammyAwards.Models.Song", "Song")
-                        .WithMany()
+                        .WithMany("SongArtists")
                         .HasForeignKey("SongId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -425,6 +437,11 @@ namespace GrammyAwards.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("GrammyAwards.Models.Song", b =>
+                {
+                    b.Navigation("SongArtists");
                 });
 #pragma warning restore 612, 618
         }

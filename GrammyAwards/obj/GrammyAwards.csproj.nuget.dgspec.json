@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/GrammyAwards.csproj": {}
+    "/Users/Audrey/Desktop/Desktop/C# Grammy Failed/GrammyAwards/GrammyAwards.csproj": {}
   },
   "projects": {
-    "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/GrammyAwards.csproj": {
+    "/Users/Audrey/Desktop/Desktop/C# Grammy Failed/GrammyAwards/GrammyAwards.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/GrammyAwards.csproj",
+        "projectUniqueName": "/Users/Audrey/Desktop/Desktop/C# Grammy Failed/GrammyAwards/GrammyAwards.csproj",
         "projectName": "GrammyAwards",
-        "projectPath": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/GrammyAwards.csproj",
+        "projectPath": "/Users/Audrey/Desktop/Desktop/C# Grammy Failed/GrammyAwards/GrammyAwards.csproj",
         "packagesPath": "/Users/Audrey/Desktop/.nuget/packages/",
-        "outputPath": "/Users/Audrey/Desktop/Desktop/n01708514_PassionProject/GrammyAwards/obj/",
+        "outputPath": "/Users/Audrey/Desktop/Desktop/C# Grammy Failed/GrammyAwards/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Audrey/Desktop/.nuget/NuGet/NuGet.Config"
@@ -44,6 +44,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.2, )"
@@ -84,11 +88,11 @@
             },
             "Swashbuckle.AspNetCore.SwaggerGen": {
               "target": "Package",
-              "version": "[7.2.0, )"
+              "version": "[6.5.0, )"
             },
             "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
-              "version": "[7.2.0, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [

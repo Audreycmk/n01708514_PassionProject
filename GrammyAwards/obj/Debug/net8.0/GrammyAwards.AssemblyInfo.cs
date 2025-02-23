@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GrammyAwards")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f100c5098f8e10f36f2fddfb0094fdf4257ee638")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("GrammyAwards")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GrammyAwards")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

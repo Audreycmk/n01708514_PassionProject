@@ -10,9 +10,9 @@ namespace GrammyAwards.Models
 
         public int AwardId { get; set; }
 
-        public required string AwardName { get; set; }
+        public string AwardName { get; set; }
 
-        public required string Description { get; set; }
+        public string Description { get; set; }
  
     }
 
@@ -21,8 +21,8 @@ namespace GrammyAwards.Models
 
         public int AwardId { get; set; }
 
-        public required string AwardName { get; set; }
+        public string AwardName { get; set; }
 
-        public required string Description { get; set; }
+        public string Description { get; set; }
     }
 }

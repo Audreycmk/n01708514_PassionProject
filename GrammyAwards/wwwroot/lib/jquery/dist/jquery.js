@@ -943,7 +943,7 @@ function find( selector, context, results, seed ) {
  * Create key-value caches of limited size
  * @returns {function(string, object)} Returns the Object data after storing it on itself with
  *	property name the (space-suffixed) string and (if the cache is larger than Expr.cacheLength)
- *	deleting the oldest entry
+ *	deleting the oldest artist
  */
 function createCache() {
 	var keys = [];
@@ -954,7 +954,7 @@ function createCache() {
 		// (see https://github.com/jquery/sizzle/issues/157)
 		if ( keys.push( key + " " ) > Expr.cacheLength ) {
 
-			// Only keep the most recent entries
+			// Only keep the most recent Artist
 			delete cache[ keys.shift() ];
 		}
 		return ( cache[ key + " " ] = value );
@@ -4061,7 +4061,7 @@ Data.prototype = {
 		//
 		this.set( owner, key, value );
 
-		// Since the "set" path can have two possible entry points
+		// Since the "set" path can have two possible artist points
 		// return the expected data based on which path was taken[*]
 		return value !== undefined ? value : key;
 	},

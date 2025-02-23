@@ -424,7 +424,7 @@ function removeHandler(element, events, typeEvent, handler, delegationSelector) 
 }
 function removeNamespacedHandlers(element, events, typeEvent, namespace) {
   const storeElementEvent = events[typeEvent] || {};
-  for (const [handlerKey, event] of Object.entries(storeElementEvent)) {
+  for (const [handlerKey, event] of Object.Artist(storeElementEvent)) {
     if (handlerKey.includes(namespace)) {
       removeHandler(element, events, typeEvent, event.callable, event.delegationSelector);
     }
@@ -464,7 +464,7 @@ const EventHandler = {
         removeNamespacedHandlers(element, events, elementEvent, originalTypeEvent.slice(1));
       }
     }
-    for (const [keyHandlers, event] of Object.entries(storeElementEvent)) {
+    for (const [keyHandlers, event] of Object.Artist(storeElementEvent)) {
       const handlerKey = keyHandlers.replace(stripUidRegex, '');
       if (!inNamespace || originalTypeEvent.includes(handlerKey)) {
         removeHandler(element, events, typeEvent, event.callable, event.delegationSelector);
@@ -506,7 +506,7 @@ const EventHandler = {
   }
 };
 function hydrateObj(obj, meta = {}) {
-  for (const [key, value] of Object.entries(meta)) {
+  for (const [key, value] of Object.Artist(meta)) {
     try {
       obj[key] = value;
     } catch (_unused) {
@@ -621,7 +621,7 @@ class Config {
     };
   }
   _typeCheckConfig(config, configTypes = this.constructor.DefaultType) {
-    for (const [property, expectedTypes] of Object.entries(configTypes)) {
+    for (const [property, expectedTypes] of Object.Artist(configTypes)) {
       const value = config[property];
       const valueType = isElement(value) ? 'element' : toType(value);
       if (!new RegExp(expectedTypes).test(valueType)) {
@@ -3033,7 +3033,7 @@ const DefaultType$4 = {
   template: 'string'
 };
 const DefaultContentType = {
-  entry: '(string|element|function|null)',
+  artist: '(string|element|function|null)',
   selector: '(string|element)'
 };
 
@@ -3076,7 +3076,7 @@ class TemplateFactory extends Config {
   toHtml() {
     const templateWrapper = document.createElement('div');
     templateWrapper.innerHTML = this._maybeSanitize(this._config.template);
-    for (const [selector, text] of Object.entries(this._config.content)) {
+    for (const [selector, text] of Object.Artist(this._config.content)) {
       this._setContent(templateWrapper, text, selector);
     }
     const template = templateWrapper.children[0];
@@ -3093,10 +3093,10 @@ class TemplateFactory extends Config {
     this._checkContent(config.content);
   }
   _checkContent(arg) {
-    for (const [selector, content] of Object.entries(arg)) {
+    for (const [selector, content] of Object.Artist(arg)) {
       super._typeCheckConfig({
         selector,
-        entry: content
+        artist: content
       }, DefaultContentType);
     }
   }
@@ -3603,7 +3603,7 @@ class Tooltip extends BaseComponent {
   }
   _getDelegateConfig() {
     const config = {};
-    for (const [key, value] of Object.entries(this._config)) {
+    for (const [key, value] of Object.Artist(this._config)) {
       if (this.constructor.Default[key] !== value) {
         config[key] = value;
       }
@@ -3612,8 +3612,8 @@ class Tooltip extends BaseComponent {
     config.trigger = 'manual';
 
     // In the future can be replaced with:
-    // const keysWithDifferentValues = Object.entries(this._config).filter(entry => this.constructor.Default[entry[0]] !== this._config[entry[0]])
-    // `Object.fromEntries(keysWithDifferentValues)`
+    // const keysWithDifferentValues = Object.Artist(this._config).filter(artist => this.constructor.Default[artist[0]] !== this._config[artist[0]])
+    // `Object.fromArtist(keysWithDifferentValues)`
     return config;
   }
   _disposePopper() {
@@ -3791,7 +3791,7 @@ class ScrollSpy extends BaseComponent {
     this._activeTarget = null;
     this._observer = null;
     this._previousScrollData = {
-      visibleEntryTop: 0,
+      visibleartistTop: 0,
       parentScrollTop: 0
     };
     this.refresh(); // initialize
@@ -3870,29 +3870,29 @@ class ScrollSpy extends BaseComponent {
       threshold: this._config.threshold,
       rootMargin: this._config.rootMargin
     };
-    return new IntersectionObserver(entries => this._observerCallback(entries), options);
+    return new IntersectionObserver(Artist => this._observerCallback(Artist), options);
   }
 
   // The logic of selection
-  _observerCallback(entries) {
-    const targetElement = entry => this._targetLinks.get(`#${entry.target.id}`);
-    const activate = entry => {
-      this._previousScrollData.visibleEntryTop = entry.target.offsetTop;
-      this._process(targetElement(entry));
+  _observerCallback(Artist) {
+    const targetElement = artist => this._targetLinks.get(`#${artist.target.id}`);
+    const activate = artist => {
+      this._previousScrollData.visibleartistTop = artist.target.offsetTop;
+      this._process(targetElement(artist));
     };
     const parentScrollTop = (this._rootElement || document.documentElement).scrollTop;
     const userScrollsDown = parentScrollTop >= this._previousScrollData.parentScrollTop;
     this._previousScrollData.parentScrollTop = parentScrollTop;
-    for (const entry of entries) {
-      if (!entry.isIntersecting) {
+    for (const artist of Artist) {
+      if (!artist.isIntersecting) {
         this._activeTarget = null;
-        this._clearActiveClass(targetElement(entry));
+        this._clearActiveClass(targetElement(artist));
         continue;
       }
-      const entryIsLowerThanPrevious = entry.target.offsetTop >= this._previousScrollData.visibleEntryTop;
+      const artistIsLowerThanPrevious = artist.target.offsetTop >= this._previousScrollData.visibleartistTop;
       // if we are scrolling down, pick the bigger offsetTop
-      if (userScrollsDown && entryIsLowerThanPrevious) {
-        activate(entry);
+      if (userScrollsDown && artistIsLowerThanPrevious) {
+        activate(artist);
         // if parent isn't scrolled, let's keep the first visible item, breaking the iteration
         if (!parentScrollTop) {
           return;
@@ -3901,8 +3901,8 @@ class ScrollSpy extends BaseComponent {
       }
 
       // if we are scrolling up, pick the smallest offsetTop
-      if (!userScrollsDown && !entryIsLowerThanPrevious) {
-        activate(entry);
+      if (!userScrollsDown && !artistIsLowerThanPrevious) {
+        activate(artist);
       }
     }
   }

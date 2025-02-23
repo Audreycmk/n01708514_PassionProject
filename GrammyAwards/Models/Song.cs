@@ -8,22 +8,32 @@ namespace GrammyAwards.Models
         [Key]
         public int SongId { get; set; }
         
-        public required string SongName { get; set; }
+        public string SongName { get; set; }
 
-        public required string Album { get; set; }
+        public string Album { get; set; }
 
         public int ReleaseYear { get; set; }
 
+        public List<SongArtist> SongArtists { get; set; }
     }
 
     public class SongDto
     {
         public int SongId { get; set; }
         
-        public required string SongName { get; set; }
+        public string SongName { get; set; }
 
-        public required string Album { get; set; }
+        public string Album { get; set; }
 
-        public required string ReleaseYear { get; set; }
+        public int ReleaseYear { get; set; }
+        
     }
+
+    public class SongListDto
+{
+      public int SongId { get; set; }
+
+        public List<string> SongNames { get; set; }
+        public int NumberOfSongs { get; internal set; }
+}
 }
