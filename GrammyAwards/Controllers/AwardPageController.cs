@@ -62,19 +62,16 @@ public async Task<IActionResult> Details(int id)
 
         // POST: AwardPage/New
         [HttpPost]
-        public async Task<IActionResult> New(AwardDto awardDto)
+        public async Task<IActionResult> Add(AwardDto awardDto)
         {
-            if (ModelState.IsValid)
+            ServiceResponse response = await _awardService.AddAward(awardDto);
+
+            if (response.Status == ServiceResponse.ServiceStatus.Created)
             {
-                var response = await _awardService.AddAward(awardDto);
-                if (response.Status == ServiceResponse.ServiceStatus.Created)
-                {
-                    return RedirectToAction("Index");
-                }
-                // Handle errors
-                return View("Error", response.Messages);
+                return RedirectToAction("Details", "AwardPage", new { id = response.CreatedId });
             }
-            return View(awardDto);
+
+            return View("Error", new ErrorViewModel { Errors = response.Messages });
         }
 
 
