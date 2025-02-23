@@ -75,28 +75,27 @@ namespace GrammyAwards.Controllers
             return View("Error", new ErrorViewModel { Errors = response.Messages });
         }
 
+    public async Task<IActionResult> Edit(int id)
+{
+    var artist = await _artistService.FindArtist(id); // Fetch the artist from the service
 
-        //GET ArtistPage/Edit/{id}
-        [HttpGet]
-        public async Task<IActionResult> Edit(int id)
-        {
-            ArtistDto? artistDto = await _artistService.FindArtist(id);
-            if (artistDto == null)
-            {
-                return View("Error", new ErrorViewModel { Errors = ["Could not find artist"] });
-            }
-            return View(artistDto);
-        }
-        // Update artist details
-        [HttpPost]
-        public async Task<IActionResult> Update(int id, ArtistDetails artistDetails)
-        {
-            // We now use ArtistDetails instead of ArtistDto
-            ServiceResponse response = await _artistService.UpdateArtist(id, artistDetails.Artist);
+    if (artist == null)
+    {
+        return NotFound(); // Handle case when the artist is not found
+    }
 
-            if (response.Status == ServiceResponse.ServiceStatus.Updated)
+    return View(artist); // Return the artist to the Edit view
+}
+
+
+[HttpPost]
+        public async Task<IActionResult> Update(int id, ArtistDto artistDto)
+        {
+            ServiceResponse response = await _artistService.UpdateArtist(id, artistDto);
+
+            if (response.Status == ServiceResponse.ServiceStatus.Created)
             {
-                return RedirectToAction("Details", "ArtistPage", new { id = id });
+                return RedirectToAction("Details", "ArtistPage", new { id = response.CreatedId });
             }
 
             return View("Error", new ErrorViewModel { Errors = response.Messages });
